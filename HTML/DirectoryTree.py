@@ -13,19 +13,22 @@ def split(sequence, size):
         yield sequence[i:i+size] 
 
 
-class Image(str):
-    
-    TYPES = ['.png', '.jpg']
-
+class File(str):
     def __new__(cls,*args,**kw):
         return str.__new__(cls,*args,**kw)
 
     def __init__(self, fname):
         if not allowedType(fname, self.__class__.TYPES):
             raise ValueError('Type not allowed for file'+fname)
- 
+
+class Image(File):
+    TYPES = ['.png', '.jpg']
+
+class TextFile(File):
+    TYPES = ['.txt', '.tex']
 
 
+        
 class Directory(object):
     '''Can contain other directories, images, and an index.html'''
 
@@ -41,9 +44,11 @@ class Directory(object):
 
         self.path = path
         self.images = []
+        self.textFiles = []
         self.subdirs = []
         self.HTML = None
         self._addImages()
+        self._addTextFiles()
         self._addDirs()
         self._addHTML()
 
@@ -58,6 +63,16 @@ class Directory(object):
             except ValueError:
                 continue
             self.images.append(img)
+
+    def _addTextFiles(self):
+        '''Add all text files in this directory'''
+        for filenam in os.listdir(self.path):
+            txt = None
+            try:
+                txt = TextFile(filenam)
+            except ValueError:
+                continue
+            self.textFiles.append(txt)
         
     def _addDirs(self):
         '''Add all directories in this directory'''
@@ -68,9 +83,10 @@ class Directory(object):
                 self.subdirs.append( Directory(subfullname) ) 
     
     def _addHTML(self):
-        '''Add html'''
+        '''Add index.html'''
         index = open('/'.join([self.path,'index.html']), 'w')
         index.write( str(self) + '\n')
+        index.close()
         
 
     def __str__(self):
@@ -83,7 +99,8 @@ class Directory(object):
             )
         
         page.h1(self.title)
-        
+
+        # subdirectory section
         if len(self.subdirs):
             links = []
             for s in sorted(self.subdirs, key=operator.attrgetter('path')):
@@ -97,8 +114,17 @@ class Directory(object):
             page.li( links, class_='myitem' )
             page.ul.close()
 
+        #text files
+        for txt in self.textFiles:
+            page.h2(txt)
+            textfile = open('/'.join([self.path, txt]))
+            page.p( '\n'.join(textfile.readlines() ) )
+            textfile.close()
+
+        #plots
         size = 100/self.nimagesperrow - 1
         if len(self.images):
+            page.h2('Plots')
             for rimgs in split(sorted(self.images), self.nimagesperrow):
                 page.img( src=rimgs, width='{size}%'.format(size=size),
                           alt=rimgs)
