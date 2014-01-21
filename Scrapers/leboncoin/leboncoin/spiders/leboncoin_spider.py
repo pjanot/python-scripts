@@ -20,14 +20,14 @@ class LeboncoinSpider(BaseSpider):
     name = "leboncoin"
     allowed_domains = ["leboncoin.fr"]
     start_urls = [
-         # "http://www.leboncoin.fr/annonces/offres/rhone_alpes/"
+         # rhone alpes
          # "http://www.leboncoin.fr/ventes_immobilieres/offres/rhone_alpes/?f=a&th=1",
+         # ain
+         # "http://www.leboncoin.fr/ventes_immobilieres/offres/rhone_alpes/ain/?f=a&th=1",
          # Meximieux:
          "http://www.leboncoin.fr/ventes_immobilieres/offres/rhone_alpes/?o=1&location=Meximieux%2001800"
          ]
 
-    
-    # restrict_xpaths=('//li[class="page"]')    
     def parse(self, response):      
         sel = Selector(response)
         links_to_annonces = sel.css('div[class="list-lbc"]').xpath('a/@href').extract()
@@ -59,7 +59,8 @@ class LeboncoinSpider(BaseSpider):
             yield Request(urlparse.urljoin(response.url, link_url), 
                           meta={},
                           callback=self.parse)
-        
+
+            
     def parse_annonce(self, response):
         # print 'parsing annonce:', response.url
         item = response.request.meta['item'] 
@@ -80,9 +81,10 @@ class LeboncoinSpider(BaseSpider):
 
         surface = get_value(data,'Surface')
         if surface: 
-            surface.translate(None, ' m')
+            surface = surface.translate(None, ' m')
         item['surface'] = surface
         item['npieces'] = get_value(data,'Pi?ces')
+        item['postal'] = get_value(data, 'Code postal')
         yield item
 
 

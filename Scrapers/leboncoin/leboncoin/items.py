@@ -7,6 +7,7 @@ from scrapy.item import Item, Field
 
 class AnnonceItem(Item):
     # define the fields for your item here like:
+    postal = Field()
     url = Field()
     price = Field()
     surface = Field()
