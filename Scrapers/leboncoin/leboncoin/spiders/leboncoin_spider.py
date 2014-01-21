@@ -1,4 +1,7 @@
+from scrapy.contrib.spiders import CrawlSpider, Rule
 from scrapy.spider import BaseSpider
+from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
+from scrapy.selector import HtmlXPathSelector
 from scrapy.selector import Selector
 from leboncoin.items import AnnonceItem
 
@@ -8,38 +11,11 @@ from scrapy.http.request import Request
 import pprint
 
 
-class DivTree( object ):
-    def __init__(self, node, depth=0):
-        self.depth = depth
-        classes = node.xpath('@class').extract()
-        self.nodes = []
-        self.data = node.xpath('text()').extract()
-        #encoding (accents...)
-        self.data = [ d.encode('ascii', 'replace').rstrip() for d in self.data]
-        #clean up empty lines
-        self.data = [d for d in self.data if d!='']
-        if len(classes)==0: 
-            # print 'no class'
-            self.classname = 'no class'
-            return
-        else:
-            self.classname = classes[0]
-            # print self.classname
-            self.nodes = [DivTree(path, depth+1) for path in node.xpath('div')]
-            
-            
-    def __str__(self):
-        tab = '\t'*self.depth 
-        print 'data length : ', len(self.data)
-        lines = [tab + self.classname]
-        if len(self.data):
-            lines.append(tab + tab.join(self.data))
-        for node in self.nodes:
-            lines.append(node.__str__())
-        return '\n'.join(lines)
-
-         
-        
+def process_value(value):
+    print value
+    import pdb; pdb.set_trace()
+    return value
+    
 class LeboncoinSpider(BaseSpider):
     name = "leboncoin"
     allowed_domains = ["leboncoin.fr"]
@@ -47,32 +23,45 @@ class LeboncoinSpider(BaseSpider):
          # "http://www.leboncoin.fr/annonces/offres/rhone_alpes/"
          # "http://www.leboncoin.fr/ventes_immobilieres/offres/rhone_alpes/?f=a&th=1",
          # Meximieux:
-         "http://www.leboncoin.fr/ventes_immobilieres/offres/rhone_alpes/?o=2&location=Meximieux%2001800"
+         "http://www.leboncoin.fr/ventes_immobilieres/offres/rhone_alpes/?o=1&location=Meximieux%2001800"
          ]
 
-    def parseAnnonce(self, link):
-        print link
-        pass
-        # detail = annonce.css('div[class="detail"]')
-        
-        
-    def parse(self, response):
+    
+    # restrict_xpaths=('//li[class="page"]')    
+    def parse(self, response):      
         sel = Selector(response)
-
         links_to_annonces = sel.css('div[class="list-lbc"]').xpath('a/@href').extract()
         links_to_annonces = [a.encode('ascii').rstrip() for a in links_to_annonces]
 
+        print response.url
+
         for link in links_to_annonces:
             # self.parseAnnonce(link)
-            print link
+            # print link
             item = AnnonceItem()
             yield Request(urlparse.urljoin(response.url, link), 
                           meta={'item':item},
                           callback=self.parse_annonce)
             # if 1: break
-            
+
+        # next page
+        link_url = None
+        links = sel.css('li[class="page"]')
+
+        for link in links:
+            link_text = link.xpath('a/text()').extract()
+            print link_text
+            if len(link_text) and link_text[0].find('suivante'):
+                link_urls = link.xpath('a/@href').extract()
+                if len(link_urls):
+                    link_url = link_urls[0]
+        if link_url:
+            yield Request(urlparse.urljoin(response.url, link_url), 
+                          meta={},
+                          callback=self.parse)
+        
     def parse_annonce(self, response):
-        print 'parsing annonce:', response.url
+        # print 'parsing annonce:', response.url
         item = response.request.meta['item'] 
         item['url'] = response.url
 
@@ -106,3 +95,5 @@ def get_value(data, field):
         return data[index]
     else:
         return None
+
+
