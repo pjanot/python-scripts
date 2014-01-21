@@ -18,7 +18,7 @@ class LeboncoinPipeline(object):
         self.c = self.conn.cursor()
         # Create table
         self.c.execute('''CREATE TABLE ads
-        (postal int, npieces int, price real, surface real, url text)
+        (zipcode int, npieces int, price real, surface real, url text)
         ''')
         self.conn.commit()
              
@@ -33,7 +33,7 @@ class LeboncoinPipeline(object):
         if item['npieces'] is None:
             return None 
         qry = "INSERT INTO ads VALUES ({postal},{npieces},{price},{surface},'{url}')".format(
-            postal = item['postal'],
+            zipcode = item['zipcode'],
             npieces = item['npieces'],
             price = item['price'],
             surface = item['surface'],

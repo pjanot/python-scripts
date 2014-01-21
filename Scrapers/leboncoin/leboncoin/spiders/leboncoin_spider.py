@@ -84,7 +84,7 @@ class LeboncoinSpider(BaseSpider):
             surface = surface.translate(None, ' m')
         item['surface'] = surface
         item['npieces'] = get_value(data,'Pi?ces')
-        item['postal'] = get_value(data, 'Code postal')
+        item['zipcode'] = get_value(data, 'Code postal')
         yield item
 
 
