@@ -1,0 +1,419 @@
+L'Abergement-Clémenciat 	01001 	01400 	Chalaronne-centre 	15,95 	784 	49,15 	Bourg-en-Bresse
+L'Abergement-de-Varey 	01002 	01640 	Plaine de l'Ain 	9,15 	221 	22,62 	Belley
+Ambérieu-en-Bugey 	01004 	01500 	Plaine de l'Ain 	24,60 	13 835 	542,68 	Belley
+Ambérieux-en-Dombes 	01005 	01330 	Porte ouest de la Dombes 	15,92 	1 616 	100,00 	Bourg-en-Bresse
+Ambléon 	01006 	01300 	Belley Bas Bugey 	5,88 	116 	20,41 	Belley
+Ambronay 	01007 	01500 	Plaine de l'Ain 	33,55 	2 362 	69,39 	Belley
+Ambutrix 	01008 	01500 	Plaine de l'Ain 	5,22 	729 	126,44 	Belley
+Andert-et-Condon 	01009 	01300 	Belley Bas Bugey 	6,94 	340 	48,41 	Belley
+Anglefort 	01010 	01350 	Pays de Seyssel 	29,26 	994 	32,80 	Belley
+Apremont 	01011 	01100 	Lac de Nantua 	14,57 	363 	24,16 	Nantua
+Aranc 	01012 	01110 	Plateau d'Hauteville 	21,65 	302 	13,72 	Belley
+Arandas 	01013 	01230 	Vallée de l'Albarine 	14,10 	163 	11,70 	Belley
+Arbent 	01014 	01100 	Oyonnax 	23,49 	3 476 	148,70 	Nantua
+Arbignieu 	01015 	01300 	Belley Bas Bugey 	13,07 	480 	36,07 	Belley
+Arbigny 	01016 	01190 	Canton de Pont-de-Vaux 	17,47 	399 	21,92 	Bourg-en-Bresse
+Argis 	01017 	01230 	Vallée de l'Albarine 	7,84 	421 	53,70 	Belley
+Armix 	01019 	01510 	Bugey-Arêne-Furans 	6,82 	20 	3,22 	Belley
+Ars-sur-Formans 	01021 	01480 	Porte ouest de la Dombes 	5,50 	1 367 	241,09 	Bourg-en-Bresse
+Artemare 	01022 	01510 	Valromey 	3,75 	1 126 	296,53 	Belley
+Asnières-sur-Saône 	01023 	01570 	Pays de Bâgé 	4,68 	73 	15,60 	Bourg-en-Bresse
+Attignat 	01024 	01340 	Montrevel-en-Bresse 	18,69 	2 936 	152,49 	Bourg-en-Bresse
+Bâgé-la-Ville 	01025 	01380 	Pays de Bâgé 	39,68 	3 040 	74,97 	Bourg-en-Bresse
+Bâgé-le-Châtel 	01026 	01380 	Pays de Bâgé 	0,88 	796 	900,00 	Bourg-en-Bresse
+Balan 	01027 	01360 	Canton de Montluel 	18,04 	2 348 	130,54 	Bourg-en-Bresse
+Baneins 	01028 	01990 	Chalaronne-centre 	8,91 	572 	65,43 	Bourg-en-Bresse
+Béard-Géovreissiat 	01170 	01460 	Lac de Nantua 	4,69 	925 	199,36 	Nantua
+Beaupont 	01029 	01270 	Canton de Coligny 	14,07 	624 	42,57 	Bourg-en-Bresse
+Beauregard 	01030 	01480 	Porte ouest de la Dombes 	0,94 	870 	924,47 	Bourg-en-Bresse
+Béligneux 	01032 	01360 	Canton de Montluel 	13,30 	2 905 	217,89 	Bourg-en-Bresse
+Bellegarde-sur-Valserine 	01033 	01200 	pays bellegardien 	15,00 	11 790 	778,60 	Nantua
+Belley 	01034 	01300 	Belley Bas Bugey 	22,42 	8 755 	390,23 	Belley
+Belleydoux 	01035 	01130 	Oyonnax 	17,63 	321 	17,58 	Nantua
+Bellignat 	01031 	01100 	Oyonnax 	7,84 	3 537 	444,00 	Nantua
+Belmont-Luthézieu 	01036 	01260 	Valromey 	19,77 	514 	25,39 	Belley
+Bénonces 	01037 	01470 	Rhône Chartreuse de Portes 	15,33 	275 	18,13 	Belley
+Bény 	01038 	01370 	Canton de Coligny 	18,25 	724 	40,22 	Bourg-en-Bresse
+Béon 	01039 	01350 	Colombier 	10,30 	373 	34,17 	Belley
+Béréziat 	01040 	01340 	Montrevel-en-Bresse 	10,83 	445 	38,41 	Bourg-en-Bresse
+Bettant 	01041 	01500 	Plaine de l'Ain 	3,37 	724 	215,73 	Belley
+Bey 	01042 	01290 	Canton de Pont-de-Veyle 	2,77 	245 	88,09 	Bourg-en-Bresse
+Beynost 	01043 	01700 	Miribel et du Plateau 	10,64 	4 475 	410,80 	Bourg-en-Bresse
+Billiat 	01044 	01200 	pays bellegardien 	13,70 	484 	33,28 	Nantua
+Birieux 	01045 	01330 	Centre Dombes 	15,83 	236 	9,16 	Bourg-en-Bresse
+Biziat 	01046 	01290 	Bords de Veyle 	11,48 	797 	55,84 	Bourg-en-Bresse
+Blyes 	01047 	01150 	Plaine de l'Ain 	9,32 	886 	74,25 	Belley
+La Boisse 	01049 	01120 	Canton de Montluel 	9,40 	2 928 	288,19 	Bourg-en-Bresse
+Boissey 	01050 	01190 	Canton de Pont-de-Vaux 	9,05 	288 	22,32 	Bourg-en-Bresse
+Bolozon 	01051 	01450 	Monts Berthiand 	4,91 	94 	19,14 	Nantua
+Bouligneux 	01052 	01330 	Centre Dombes 	26,09 	309 	11,12 	Bourg-en-Bresse
+Bourg-en-Bresse 	01053 	01000 	Bourg-en-Bresse 	23,86 	40 088 	1 704,36 	Bourg-en-Bresse
+Bourg-Saint-Christophe 	01054 	01800 	Plaine de l'Ain 	8,98 	1 173 	91,76 	Bourg-en-Bresse
+Boyeux-Saint-Jérôme 	01056 	01640 	Communauté de communes des Rives de l'Ain - Pays du Cerdon 	16,94 	321 	16,35 	Nantua
+Boz 	01057 	01190 	Canton de Pont-de-Vaux 	7,31 	496 	49,11 	Bourg-en-Bresse
+Brégnier-Cordon 	01058 	01300 	Terre d'eaux 	11,60 	832 	48,79 	Belley
+Brénaz 	01059 	01260 	Valromey 	9,79 	92 	10,73 	Belley
+Brénod 	01060 	01110 	Combe du Val - Brénod 	23,79 	544 	17,95 	Nantua
+Brens 	01061 	01300 	Belley Bas Bugey 	6,90 	1 158 	105,94 	Belley
+Bressolles 	01062 	01360 	Canton de Montluel 	7,93 	709 	74,40 	Bourg-en-Bresse
+Brion 	01063 	01460 	Lac de Nantua 	4,48 	517 	124,78 	Nantua
+Briord 	01064 	01470 	Rhône Chartreuse de Portes 	12,29 	893 	54,92 	Belley
+Buellas 	01065 	01310 	Bourg-en-Bresse 	10,21 	1 669 	126,15 	Bourg-en-Bresse
+La Burbanche 	01066 	01510 	Bugey-Arêne-Furans 	10,82 	72 	5,18 	Belley
+Ceignes 	01067 	01430 	Monts Berthiand 	10,01 	265 	22,98 	Nantua
+Cerdon 	01068 	01450 	Communauté de communes des Rives de l'Ain - Pays du Cerdon 	12,30 	741 	54,63 	Nantua
+Certines 	01069 	01240 	Bresse Dombes Sud Revermont 	15,92 	1 445 	80,90 	Bourg-en-Bresse
+Cessy 	01071 	01170 	Pays de Gex 	6,55 	3 992 	348,55 	Gex
+Ceyzériat 	01072 	01250 	La Vallière 	9,36 	2 738 	255,34 	Bourg-en-Bresse
+Ceyzérieu 	01073 	01350 	Colombier 	19,72 	929 	41,28 	Belley
+Chalamont 	01074 	01320 	Canton de Chalamont 	32,88 	2 322 	50,43 	Bourg-en-Bresse
+Chaleins 	01075 	01480 	Aucune 	17,00 	1 165 	60,29 	Bourg-en-Bresse
+Chaley 	01076 	01230 	Vallée de l'Albarine 	4,60 	127 	23,04 	Belley
+Challes-la-Montagne 	01077 	01450 	Communauté de communes des Rives de l'Ain - Pays du Cerdon 	7,65 	179 	26,14 	Nantua
+Challex 	01078 	01630 	Pays de Gex 	8,67 	1 225 	121,91 	Gex
+Champagne-en-Valromey 	01079 	01260 	Valromey 	18,16 	765 	37,11 	Belley
+Champdor 	01080 	01110 	Plateau d'Hauteville 	17,37 	464 	24,47 	Nantua
+Champfromier 	01081 	01410 	pays bellegardien 	32,40 	677 	18,30 	Nantua
+Chanay 	01082 	01420 	pays bellegardien 	18,10 	617 	31,66 	Belley
+Chaneins 	01083 	01990 	Chanstrival 	12,63 	820 	44,34 	Bourg-en-Bresse
+Chanoz-Châtenay 	01084 	01400 	Bords de Veyle 	13,42 	706 	36,66 	Bourg-en-Bresse
+La Chapelle-du-Châtelard 	01085 	01240 	Centre Dombes 	13,37 	341 	19,67 	Bourg-en-Bresse
+Charix 	01087 	01130 	Lac de Nantua 	18,27 	294 	14,50 	Nantua
+Charnoz-sur-Ain 	01088 	01800 	Plaine de l'Ain 	6,62 	911 	122,36 	Bourg-en-Bresse
+Château-Gaillard 	01089 	01500 	Plaine de l'Ain 	16,60 	1 818 	82,53 	Belley
+Châtenay 	01090 	01320 	Canton de Chalamont 	14,95 	352 	20,60 	Bourg-en-Bresse
+Châtillon-en-Michaille 	01091 	01200 	pays bellegardien 	37,63 	3120 	70,18 	Nantua
+Châtillon-la-Palud 	01092 	01320 	Canton de Chalamont 	14,01 	1562 	76,66 	Bourg-en-Bresse
+Châtillon-sur-Chalaronne 	01093 	01400 	Chalaronne-centre 	17,86 	4922 	231,63 	Bourg-en-Bresse
+Chavannes-sur-Reyssouze 	01094 	01190 	Canton de Pont-de-Vaux 	16,55 	680 	35,05 	Bourg-en-Bresse
+Chavannes-sur-Suran 	01095 	01250 	Treffort-en-Revermont 	21,50 	644 	22,56 	Bourg-en-Bresse
+Chaveyriat 	01096 	01660 	Bords de Veyle 	16,87 	927 	48,01 	Bourg-en-Bresse
+Chavornay 	01097 	01510 	Valromey 	7,77 	199 	22,39 	Belley
+Chazey-Bons 	01098 	01300 	Belley Bas Bugey 	10,59 	744 	62,70 	Belley
+Chazey-sur-Ain 	01099 	01150 	Plaine de l'Ain 	21,95 	1464 	54,67 	Belley
+Cheignieu-la-Balme 	01100 	01510 	Bugey-Arêne-Furans 	6,26 	157 	17,89 	Belley
+Chevillard 	01101 	01430 	Combe du Val - Brénod 	9,67 	162 	13,65 	Nantua
+Chevroux 	01102 	01190 	Canton de Pont-de-Vaux 	17,20 	933 	38,20 	Bourg-en-Bresse
+Chevry 	01103 	01170 	Pays de Gex 	5,84 	1235 	137,50 	Gex
+Chézery-Forens 	01104 	01410 	Pays de Gex 	46,57 	434 	7,92 	Bourg-en-Bresse
+Civrieux 	01105 	01390 	Saône Vallée 	19,76 	1362 	54,61 	Bourg-en-Bresse
+Cize 	01106 	01250 	La Vallière 	4,52 	170 	28,10 	Belley
+Cleyzieu 	01107 	01230 	Vallée de l'Albarine 	7,82 	135 	14,83 	Bourg-en-Bresse
+Coligny 	01108 	01270 	Canton de Coligny 	16,87 	1154 	64,67 	Bourg-en-Bresse
+Collonges 	01109 	01550 	Pays de Gex 	16,25 	1897 	68,06 	Gex
+Colomieu 	01110 	01300 	Terre d'eaux 	5,96 	115 	21,48 	Belley
+Conand 	01111 	01230 	Vallée de l'Albarine 	15,28 	104 	4,52 	Belley
+Condamine 	01112 	01430 	Combe du Val - Brénod 	4,64 	404 	61,42 	Nantua
+Condeissiat 	01113 	01400 	Chalaronne-centre 	21,64 	756 	29,99 	Bourg-en-Bresse
+Confort 	01114 	01200 	pays bellegardien 	11,66 	525 	42,80 	Gex
+Confrançon 	01115 	01310 	Montrevel-en-Bresse 	18,17 	1157 	47,44 	Bourg-en-Bresse
+Contrevoz 	01116 	01300 	Belley Bas Bugey 	14,18 	539 	30,32 	Belley
+Conzieu 	01117 	01300 	Belley Bas Bugey 	7,20 	135 	13,89 	Belley
+Corbonod 	01118 	01420 	Pays de Seyssel 	31,59 	1176 	28,43 	Belley
+Corcelles 	01119 	01110 	Plateau d'Hauteville 	14,16 	243 	15,61 	Nantua
+Corlier 	01121 	01110 	Plateau d'Hauteville 	5,45 	124 	13,39 	Belley
+Cormaranche-en-Bugey 	01122 	01110 	Plateau d'Hauteville 	18,92 	859 	38,37 	Belley
+Cormoranche-sur-Saône 	01123 	01290 	Canton de Pont-de-Veyle 	9,85 	1058 	91,78 	Bourg-en-Bresse
+Cormoz 	01124 	01560 	Canton de Saint-Trivier-de-Courtes 	19,56 	625 	26,18 	Bourg-en-Bresse
+Corveissiat 	01125 	01250 	Treffort-en-Revermont 	22,69 	602 	20,67 	Bourg-en-Bresse
+Courmangoux 	01127 	01370 	Treffort-en-Revermont 	14,82 	507 	24,29 	Bourg-en-Bresse
+Courtes 	01128 	01560 	Canton de Saint-Trivier-de-Courtes 	9,06 	266 	24,06 	Bourg-en-Bresse
+Crans 	01129 	01320 	Canton de Chalamont 	13,23 	269 	19,50 	Bourg-en-Bresse
+Cras-sur-Reyssouze 	01130 	01340 	Montrevel-en-Bresse 	13,83 	1256 	65,58 	Bourg-en-Bresse
+Cressin-Rochefort 	01133 	01350 	Belley Bas Bugey 	7,93 	374 	38,84 	Belley
+Crottet 	01134 	01290 	Canton de Pont-de-Veyle 	12,12 	1722 	121,86 	Bourg-en-Bresse
+Crozet 	01135 	01170 	Pays de Gex 	27,47 	1862 	49,11 	Gex
+Cruzilles-lès-Mépillat 	01136 	01290 	Canton de Pont-de-Veyle 	11,84 	818 	54,98 	Bourg-en-Bresse
+Culoz 	01138 	01350 	Colombier 	19,36 	2909 	135,43 	Belley
+Curciat-Dongalon 	01139 	01560 	Canton de Saint-Trivier-de-Courtes 	23,94 	456 	16,88 	Bourg-en-Bresse
+Curtafond 	01140 	01310 	Montrevel-en-Bresse 	12,41 	702 	47,54 	Bourg-en-Bresse
+Cuzieu 	01141 	01300 	Bugey-Arêne-Furans 	4,87 	407 	62,42 	Belley
+Dagneux 	01142 	01120 	Canton de Montluel 	6,65 	4099 	564,96 	Bourg-en-Bresse
+Divonne-les-Bains 	01143 	01220 	Pays de Gex 	33,88 	8160 	182,14 	Gex
+Dommartin 	01144 	01380 	Pays de Bâgé 	17,19 	841 	34,90 	Bourg-en-Bresse
+Dompierre-sur-Veyle 	01145 	01240 	Bourg-en-Bresse 	29,10 	1226 	33,26 	Bourg-en-Bresse
+Dompierre-sur-Chalaronne 	01146 	01400 	Chalaronne-centre 	4,78 	389 	58,37 	Bourg-en-Bresse
+Domsure 	01147 	01270 	Canton de Coligny 	15,20 	473 	26,51 	Bourg-en-Bresse
+Dortan 	01148 	01590 	Oyonnax 	18,11 	1996 	120,71 	Nantua
+Douvres 	01149 	01500 	Plaine de l'Ain 	5,26 	962 	122,81 	Belley
+Drom 	01150 	01250 	Treffort-en-Revermont 	7,78 	209 	20,57 	Bourg-en-Bresse
+Druillat 	01151 	01160 	Bresse Dombes Sud Revermont 	20,72 	1134 	42,57 	Bourg-en-Bresse
+Échallon 	01152 	01130 	Oyonnax 	28,09 	772 	23,60 	Nantua
+Échenevex 	01153 	01170 	Pays de Gex 	16,44 	1631 	72,81 	Gex
+Étrez 	01154 	01340 	Montrevel-en-Bresse 	12,15 	803 	52,84 	Bourg-en-Bresse
+Évosges 	01155 	01230 	Vallée de l'Albarine 	12,08 	140 	9,02 	Belley
+Faramans 	01156 	01800 	Plaine de l'Ain 	11,22 	681 	52,76 	Bourg-en-Bresse
+Fareins 	01157 	01480 	Porte ouest de la Dombes 	8,22 	2137 	204,87 	Bourg-en-Bresse
+Farges 	01158 	01550 	Pays de Gex 	14,28 	894 	41,60 	Gex
+Feillens 	01159 	01570 	Pays de Bâgé 	14,91 	3115 	196,71 	Bourg-en-Bresse
+Ferney-Voltaire 	01160 	01210 	Pays de Gex 	4,78 	8025 	1 481,80 	Gex
+Flaxieu 	01162 	01350 	Belley Bas Bugey 	2,79 	63 	17,92 	Belley
+Foissiat 	01163 	01340 	Montrevel-en-Bresse 	40,30 	1912 	38,76 	Bourg-en-Bresse
+Francheleins 	01165 	01090 	Montmerle Trois Rivières 	13,56 	1323 	73,30 	Bourg-en-Bresse
+Frans 	01166 	01480 	Porte ouest de la Dombes 	7,98 	1984 	231,58 	Bourg-en-Bresse
+Garnerans 	01167 	01140 	Val-de-Saône Chalaronne 	8,57 	656 	65,93 	Bourg-en-Bresse
+Genouilleux 	01169 	01090 	Montmerle Trois Rivières 	4,08 	609 	97,79 	Bourg-en-Bresse
+Géovreisset 	01171 	01100 	Oyonnax 	3,50 	903 	216,86 	Nantua
+Germagnat 	01172 	01250 	Treffort-en-Revermont 	9,48 	145 	9,70 	Bourg-en-Bresse
+Gex 	01173 	01170 	Pays de Gex 	32,02 	10372 	241,51 	Gex
+Giron 	01174 	01130 	pays bellegardien 	9,39 	162 	10,65 	Nantua
+Gorrevod 	01175 	01190 	Canton de Pont-de-Vaux 	6,88 	799 	81,54 	Bourg-en-Bresse
+Le Grand-Abergement 	01176 	01260 	Valromey 	31,92 	109 	3,38 	Nantua
+Grand-Corent 	01177 	01250 	Treffort-en-Revermont 	7,13 	161 	15,57 	Bourg-en-Bresse
+Grièges 	01179 	01290 	Canton de Pont-de-Veyle 	14,87 	1899 	107,46 	Bourg-en-Bresse
+Grilly 	01180 	01220 	Pays de Gex 	7,50 	762 	81,60 	Gex
+Groissiat 	01181 	01100 	Oyonnax 	6,32 	1143 	118,20 	Nantua
+Groslée 	01182 	01680 	Terre d'eaux 	7,27 	353 	45,80 	Belley
+Guéreins 	01183 	01090 	Montmerle Trois Rivières 	4,51 	1308 	236,14 	Bourg-en-Bresse
+Hautecourt-Romanèche 	01184 	01250 	La Vallière 	21,60 	773 	31,30 	Bourg-en-Bresse
+Hauteville-Lompnes 	01185 	01110 	Plateau d'Hauteville 	50,34 	4044 	72,75 	Belley
+Hostiaz 	01186 	01110 	Vallée de l'Albarine 	10,60 	82 	5,85 	Belley
+Hotonnes 	01187 	01260 	Valromey 	28,70 	306 	10,28 	Nantua
+Illiat 	01188 	01140 	Val-de-Saône Chalaronne 	20,37 	570 	22,88 	Bourg-en-Bresse
+Injoux-Génissiat 	01189 	01200 	pays bellegardien 	29,61 	1055 	32,76 	Nantua
+Innimond 	01190 	01680 	Rhône Chartreuse de Portes 	13,44 	114 	7,07 	Belley
+Izenave 	01191 	01430 	Combe du Val - Brénod 	13,04 	164 	11,20 	Nantua
+Izernore 	01192 	01580 	Monts Berthiand 	20,86 	2278 	79,39 	Nantua
+Izieu 	01193 	01300 	Terre d'eaux 	7,67 	201 	23,21 	Belley
+Jassans-Riottier 	01194 	01480 	Porte ouest de la Dombes 	4,81 	5976 	1 109,77 	Bourg-en-Bresse
+Jasseron 	01195 	01250 	Bourg-en-Bresse 	18,93 	1552 	66,35 	Bourg-en-Bresse
+Jayat 	01196 	01340 	Montrevel-en-Bresse 	16,30 	1049 	47,42 	Bourg-en-Bresse
+Journans 	01197 	01250 	Bresse Dombes Sud Revermont 	2,43 	324 	135,80 	Bourg-en-Bresse
+Joyeux 	01198 	01800 	Plaine de l'Ain 	16,58 	223 	12,42 	Bourg-en-Bresse
+Jujurieux 	01199 	01640 	Communauté de communes des Rives de l'Ain - Pays du Cerdon 	15,39 	2097 	110,46 	Nantua
+Labalme 	01200 	01450 	Communauté de communes des Rives de l'Ain - Pays du Cerdon 	8,80 	204 	15,34 	Nantua
+Lagnieu 	01202 	01150 	Plaine de l'Ain 	27,25 	6756 	215,85 	Belley
+Laiz 	01203 	01290 	Canton de Pont-de-Veyle 	10,31 	1130 	95,64 	Bourg-en-Bresse
+Lalleyriat 	01204 	01130 	Lac de Nantua 	15,25 	239 	12,79 	Nantua
+Lancrans 	01205 	01200 	pays bellegardien 	9,66 	1052 	96,79 	Gex
+Lantenay 	01206 	01430 	Combe du Val - Brénod 	6,59 	257 	39,45 	Nantua
+Lapeyrouse 	01207 	01330 	Centre Dombes 	20,04 	292 	11,28 	Bourg-en-Bresse
+Lavours 	01208 	01350 	Colombier 	6,30 	148 	18,57 	Belley
+Léaz 	01209 	01200 	Pays de Gex 	11,40 	569 	42,19 	Gex
+Lélex 	01210 	01410 	Pays de Gex 	17,70 	225 	12,49 	Gex
+Lent 	01211 	01240 	Bourg-en-Bresse 	31,48 	1328 	36,37 	Bourg-en-Bresse
+Lescheroux 	01212 	01560 	Canton de Saint-Trivier-de-Courtes 	20,05 	683 	29,78 	Bourg-en-Bresse
+Leyment 	01213 	01150 	Plaine de l'Ain 	14,18 	1273 	65,02 	Belley
+Leyssard 	01214 	01450 	Monts Berthiand 	9,61 	153 	14,88 	Nantua
+Lhôpital 	01215 	01420 	Aucune 	3,70 	59 	13,24 	Nantua
+Lhuis 	01216 	01680 	Rhône Chartreuse de Portes 	24,43 	854 	29,64 	Belley
+Lochieu 	01218 	01260 	Valromey 	7,07 	91 	10,33 	Belley
+Lompnas 	01219 	01680 	Rhône Chartreuse de Portes 	12,69 	149 	11,58 	Belley
+Lompnieu 	01221 	01260 	Aucune 	11,35 	122 	9,07 	Belley
+Loyettes 	01224 	01360 	Plaine de l'Ain 	21,28 	2645 	109,12 	Belley
+Lurcy 	01225 	01090 	Montmerle Trois Rivières 	4,81 	393 	53,43 	Bourg-en-Bresse
+Magnieu 	01227 	01300 	Belley Bas Bugey 	6,23 	419 	46,71 	Belley
+Maillat 	01228 	01430 	Lac de Nantua 	11,50 	668 	57,74 	Nantua
+Malafretaz 	01229 	01340 	Montrevel-en-Bresse 	9,19 	952 	73,34 	Bourg-en-Bresse
+Mantenay-Montlin 	01230 	01560 	Canton de Saint-Trivier-de-Courtes 	10,80 	288 	22,78 	Bourg-en-Bresse
+Manziat 	01231 	01570 	Pays de Bâgé 	12,63 	1924 	126,52 	Bourg-en-Bresse
+Marboz 	01232 	01851 	Canton de Coligny 	40,14 	2182 	53,91 	Bourg-en-Bresse
+Marchamp 	01233 	01680 	Rhône Chartreuse de Portes 	13,11 	118 	8,24 	Belley
+Marignieu 	01234 	01300 	Belley Bas Bugey 	3,55 	148 	43,94 	Belley
+Marlieux 	01235 	01240 	Centre Dombes 	16,85 	887 	40,18 	Bourg-en-Bresse
+Marsonnas 	01236 	01340 	Montrevel-en-Bresse 	18,38 	1005 	39,55 	Bourg-en-Bresse
+Martignat 	01237 	01100 	Oyonnax 	13,25 	1604 	95,47 	Nantua
+Massieux 	01238 	01600 	Saône Vallée 	3,10 	2428 	683,87 	Belley
+Massignieu-de-Rives 	01239 	01300 	Belley Bas Bugey 	9,52 	608 	52,31 	Belley
+Matafelon-Granges 	01240 	01580 	Monts Berthiand 	21,54 	652 	22,42 	Nantua
+Meillonnas 	01241 	01370 	Treffort-en-Revermont 	17,74 	1298 	67,87 	Bourg-en-Bresse
+Mérignat 	01242 	01450 	Communauté de communes des Rives de l'Ain - Pays du Cerdon 	3,17 	139 	35,96 	Nantua
+Messimy-sur-Saône 	01243 	01480 	Aucune 	5,95 	1209 	156,47 	Bourg-en-Bresse
+Meximieux 	01244 	01800 	Plaine de l'Ain 	13,75 	7268 	497,45 	Bourg-en-Bresse
+Bohas-Meyriat-Rignat 	01245 	01250 	La Vallière 	23,51 	2072 	30,92 	Bourg-en-Bresse
+Mézériat 	01246 	01660 	Bords de Veyle 	19,17 	2072 	99,69 	Bourg-en-Bresse
+Mijoux 	01247 	01410 	Pays de Gex 	21,90 	379 	14,25 	Gex
+Mionnay 	01248 	01390 	Centre Dombes 	19,62 	2077 	107,49 	Bourg-en-Bresse
+Miribel 	01249 	01700 	Miribel et du Plateau 	24,49 	9066 	348,67 	Bourg-en-Bresse
+Misérieux 	01250 	01600 	Saône Vallée 	7,41 	1762 	192,98 	Bourg-en-Bresse
+Mogneneins 	01252 	01140 	Val-de-Saône Chalaronne 	8,57 	727 	66,74 	Bourg-en-Bresse
+Montagnat 	01254 	01250 	La Vallière 	13,75 	1646 	103,35 	Bourg-en-Bresse
+Montagnieu 	01255 	01470 	Rhône Chartreuse de Portes 	6,22 	495 	62,06 	Belley
+Montanges 	01257 	01200 	pays bellegardien 	13,70 	330 	20,58 	Nantua
+Montceaux 	01258 	01090 	Montmerle Trois Rivières 	10,03 	1164 	90,53 	Bourg-en-Bresse
+Montcet 	01259 	01310 	Bourg-en-Bresse 	6,68 	665 	73,20 	Bourg-en-Bresse
+Le Montellier 	01260 	01800 	Plaine de l'Ain 	15,38 	244 	14,37 	Bourg-en-Bresse
+Monthieux 	01261 	01390 	Centre Dombes 	10,75 	599 	53,77 	Bourg-en-Bresse
+Montluel 	01262 	01120 	Canton de Montluel 	40,11 	6999 	160,91 	Bourg-en-Bresse
+Montmerle-sur-Saône 	01263 	01090 	Montmerle Trois Rivières 	4,16 	3823 	680,29 	Bourg-en-Bresse
+Montracol 	01264 	01310 	Bourg-en-Bresse 	14,56 	967 	42,51 	Bourg-en-Bresse
+Montréal-la-Cluse 	01265 	01460 	Oyonnax 	12,83 	3457 	284,65 	Nantua
+Montrevel-en-Bresse 	01266 	01340 	Montrevel-en-Bresse 	10,27 	2362 	194,16 	Bourg-en-Bresse
+Nurieux-Volognat 	01267 	01460 	Monts Berthiand 	19,33 	1058 	49,25 	Nantua
+Murs-et-Gélignieux 	01268 	01300 	Belley Bas Bugey 	6,46 	241 	31,58 	Belley
+Nantua 	01269 	01130 	Lac de Nantua 	12,79 	3713 	305,08 	Nantua
+Nattages 	01271 	01300 	Belley Bas Bugey 	10,33 	564 	38,04 	Belley
+Neuville-les-Dames 	01272 	01400 	Chalaronne-centre 	26,59 	1504 	46,30 	Bourg-en-Bresse
+Neuville-sur-Ain 	01273 	01160 	Communauté de communes des Rives de l'Ain - Pays du Cerdon 	19,79 	1571 	62,46 	Bourg-en-Bresse
+Les Neyrolles 	01274 	01130 	Lac de Nantua 	9,50 	637 	64,95 	Nantua
+Neyron 	01275 	01700 	Miribel et du Plateau 	5,20 	2472 	41,48 	Bourg-en-Bresse
+Niévroz 	01276 	01120 	Canton de Montluel 	10,46 	1488 	130,02 	Bourg-en-Bresse
+Nivollet-Montgriffon 	01277 	01230 	Vallée de l'Albarine 	8,24 	143 	10,56 	Belley
+Oncieu 	01279 	01230 	Vallée de l'Albarine 	7,76 	91 	10,05 	Belley
+Ordonnaz 	01280 	01510 	Rhône Chartreuse de Portes 	14,88 	141 	8,06 	Belley
+Ornex 	01281 	01210 	Pays de Gex 	5,64 	3531 	472,16 	Gex
+Outriaz 	01282 	01430 	Combe du Val - Brénod 	5,91 	256 	44,67 	Nantua
+Oyonnax 	01283 	01100 	Oyonnax 	35,98 	22650 	671,54 	Nantua
+Ozan 	01284 	01190 	Canton de Pont-de-Vaux 	6,60 	618 	70,76 	Bourg-en-Bresse
+Parcieux 	01285 	01600 	Saône Vallée 	3,14 	1095 	289,49 	Bourg-en-Bresse
+Parves 	01286 	01300 	Belley Bas Bugey 	5,53 	360 	57,87 	Belley
+Péron 	01288 	01630 	Pays de Gex 	26,01 	2143 	60,71 	Gex
+Péronnas 	01289 	01960 	Bourg-en-Bresse 	17,59 	6054 	314,61 	Bourg-en-Bresse
+Pérouges 	01290 	01800 	Plaine de l'Ain 	18,97 	1204 	58,14 	Bourg-en-Bresse
+Perrex 	01291 	01540 	Canton de Pont-de-Veyle 	11,07 	826 	65,13 	Bourg-en-Bresse
+Le Petit-Abergement 	01292 	01260 	Valromey 	26,95 	138 	5,23 	Nantua
+Peyriat 	01293 	01430 	Monts Berthiand 	5,93 	171 	26,64 	Nantua
+Peyrieu 	01294 	01300 	Belley Bas Bugey 	14,13 	821 	45,72 	Belley
+Peyzieux-sur-Saône 	01295 	01140 	Val-de-Saône Chalaronne 	8,66 	473 	38,91 	Bourg-en-Bresse
+Pirajoux 	01296 	01270 	Canton de Coligny 	12,99 	360 	23,02 	Belley
+Pizay 	01297 	01120 	Canton de Montluel 	11,18 	777 	56,98 	Bourg-en-Bresse
+Plagne 	01298 	01130 	pays bellegardien 	6,20 	129 	13,39 	Nantua
+Le Plantay 	01299 	01330 	Canton de Chalamont 	19,96 	540 	20,89 	Bourg-en-Bresse
+Le Poizat 	01300 	01130 	Lac de Nantua 	17,90 	422 	17,93 	Nantua
+Polliat 	01301 	01310 	Bourg-en-Bresse 	20,07 	2403 	100,60 	Bourg-en-Bresse
+Pollieu 	01302 	01350 	Belley Bas Bugey 	3,71 	157 	32,88 	Belley
+Poncin 	01303 	01450 	Communauté de communes des Rives de l'Ain - Pays du Cerdon 	19,77 	1644 	68,79 	Nantua
+Pont-d'Ain 	01304 	01160 	Communauté de communes des Rives de l'Ain - Pays du Cerdon 	11,22 	2678 	205,61 	Bourg-en-Bresse
+Pont-de-Vaux 	01305 	01190 	Canton de Pont-de-Vaux 	7,54 	2254 	265,78 	Bourg-en-Bresse
+Pont-de-Veyle 	01306 	01290 	Canton de Pont-de-Veyle 	1,94 	1691 	764,95 	Bourg-en-Bresse
+Port 	01307 	01460 	Lac de Nantua 	4,25 	847 	214,82 	Nantua
+Pougny 	01308 	01550 	Pays de Gex 	7,77 	802 	80,95 	Gex
+Pouillat 	01309 	01250 	Treffort-en-Revermont 	6,23 	88 	9,31 	Gex
+Prémeyzel 	01310 	01300 	Belley Bas Bugey 	7,63 	234 	31,72 	Belley
+Prémillieu 	01311 	01110 	Plateau d'Hauteville 	8,50 	36 	3,88 	Belley
+Pressiat 	01312 	01370 	Treffort-en-Revermont 	6,01 	224 	31,78 	Bourg-en-Bresse
+Prévessin-Moëns 	01313 	01280 	Pays de Gex 	12,09 	5980 	352,44 	Gex
+Priay 	01314 	01160 	Communauté de communes des Rives de l'Ain - Pays du Cerdon 	15,77 	1488 	73,05 	Bourg-en-Bresse
+Pugieu 	01316 	01510 	Bugey-Arêne-Furans 	4,85 	168 	25,98 	Belley
+Ramasse 	01317 	01250 	La Vallière 	9,86 	250 	22,21 	Bourg-en-Bresse
+Rancé 	01318 	01390 	Porte ouest de la Dombes 	9,53 	641 	52,26 	Bourg-en-Bresse
+Relevant 	01319 	01990 	Chalaronne-centre 	12,38 	466 	29,64 	Bourg-en-Bresse
+Replonges 	01320 	01750 	Pays de Bâgé 	16,59 	3500 	171,49 	Bourg-en-Bresse
+Revonnas 	01321 	01250 	La Vallière 	7,75 	788 	63,48 	Bourg-en-Bresse
+Reyrieux 	01322 	01600 	Saône Vallée 	15,69 	4093 	234,74 	Bourg-en-Bresse
+Reyssouze 	01323 	01190 	Canton de Pont-de-Vaux 	9,54 	929 	74,95 	Bourg-en-Bresse
+Rignieux-le-Franc 	01325 	01800 	Plaine de l'Ain 	15,02 	950 	55,86 	Bourg-en-Bresse
+Romans 	01328 	01400 	Chalaronne-centre 	22,32 	587 	23,39 	Bourg-en-Bresse
+Rossillon 	01329 	01510 	Bugey-Arêne-Furans 	8,07 	148 	18,22 	Belley
+Ruffieu 	01330 	01260 	Valromey 	14,03 	202 	13,40 	Belley
+Saint-Alban 	01331 	01450 	Communauté de communes des Rives de l'Ain - Pays du Cerdon 	8,08 	163 	16,46 	Nantua
+Saint-André-de-Bâgé 	01332 	01380 	Pays de Bâgé 	2,70 	635 	187,78 	Bourg-en-Bresse
+Saint-André-de-Corcy 	01333 	01390 	Centre Dombes 	20,73 	2991 	149,59 	Bourg-en-Bresse
+Saint-André-d'Huiriat 	01334 	01290 	Canton de Pont-de-Veyle 	9,00 	543 	44,67 	Bourg-en-Bresse
+Saint-André-le-Bouchoux 	01335 	01240 	Chalaronne-centre 	9,32 	316 	20,49 	Bourg-en-Bresse
+Saint-André-sur-Vieux-Jonc 	01336 	01960 	Bourg-en-Bresse 	24,22 	1079 	39,84 	Bourg-en-Bresse
+Saint-Bénigne 	01337 	01190 	Canton de Pont-de-Vaux 	16,49 	1191 	49,55 	Bourg-en-Bresse
+Saint-Benoît 	01338 	01300 	Terre d'eaux 	21,65 	773 	26,88 	Belley
+Saint-Bernard 	01339 	01600 	Saône Vallée 	3,15 	1375 	406,98 	Bourg-en-Bresse
+Saint-Bois 	01340 	01300 	Terre d'eaux 	9,22 	123 	11,06 	Belley
+Saint-Champ 	01341 	01300 	Belley Bas Bugey 	5,14 	139 	25,68 	Belley
+Saint-Cyr-sur-Menthon 	01343 	01380 	Canton de Pont-de-Veyle 	16,93 	1636 	77,61 	Bourg-en-Bresse
+Saint-Denis-lès-Bourg 	01344 	01000 	Bourg-en-Bresse 	12,58 	5575 	391,18 	Bourg-en-Bresse
+Saint-Denis-en-Bugey 	01345 	01500 	Plaine de l'Ain 	2,61 	2209 	744,83 	Belley
+Saint-Didier-d'Aussiat 	01346 	01340 	Montrevel-en-Bresse 	15,22 	876 	43,76 	Bourg-en-Bresse
+Saint-Didier-de-Formans 	01347 	01600 	Saône Vallée 	6,54 	1859 	236,09 	Bourg-en-Bresse
+Saint-Didier-sur-Chalaronne 	01348 	01140 	Val-de-Saône Chalaronne 	24,98 	2831 	90,43 	Bourg-en-Bresse
+Saint-Éloi 	01349 	01800 	Plaine de l'Ain 	14,26 	405 	28,19 	Bourg-en-Bresse
+Saint-Étienne-du-Bois 	01350 	01370 	Treffort-en-Revermont 	28,38 	2496 	72,09 	Bourg-en-Bresse
+Saint-Étienne-sur-Chalaronne 	01351 	01140 	Val-de-Saône Chalaronne 	20,99 	1468 	56,17 	Bourg-en-Bresse
+Saint-Étienne-sur-Reyssouze 	01352 	01190 	Canton de Pont-de-Vaux 	13,82 	542 	27,93 	Bourg-en-Bresse
+Saint-Genis-Pouilly 	01354 	01630 	Pays de Gex 	9,77 	9089 	653,33 	Gex
+Saint-Genis-sur-Menthon 	01355 	01380 	Canton de Pont-de-Veyle 	11,55 	418 	31,43 	Bourg-en-Bresse
+Saint-Georges-sur-Renon 	01356 	01400 	Chalaronne-centre 	5,66 	202 	28,45 	Bourg-en-Bresse
+Saint-Germain-de-Joux 	01357 	01130 	pays bellegardien 	11,27 	489 	42,24 	Nantua
+Saint-Germain-les-Paroisses 	01358 	01300 	Belley Bas Bugey 	16,27 	387 	18,87 	Belley
+Saint-Germain-sur-Renon 	01359 	01240 	Centre Dombes 	15,80 	236 	13,61 	Bourg-en-Bresse
+Saint-Jean-de-Gonville 	01360 	01630 	Pays de Gex 	12,36 	1496 	95,63 	Gex
+Saint-Jean-de-Niost 	01361 	01800 	Plaine de l'Ain 	14,19 	1421 	76,25 	Bourg-en-Bresse
+Saint-Jean-de-Thurigneux 	01362 	01390 	Saône Vallée 	16,00 	710 	34,63 	Bourg-en-Bresse
+Saint-Jean-le-Vieux 	01363 	01640 	Communauté de communes des Rives de l'Ain - Pays du Cerdon 	15,20 	1609 	95,39 	Nantua
+Saint-Jean-sur-Reyssouze 	01364 	01560 	Canton de Saint-Trivier-de-Courtes 	27,48 	744 	21,07 	Bourg-en-Bresse
+Saint-Jean-sur-Veyle 	01365 	01290 	Canton de Pont-de-Veyle 	11,21 	1082 	85,46 	Bourg-en-Bresse
+Saint-Julien-sur-Reyssouze 	01367 	01560 	Canton de Saint-Trivier-de-Courtes 	7,52 	668 	68,35 	Bourg-en-Bresse
+Saint-Julien-sur-Veyle 	01368 	01540 	Bords de Veyle 	9,84 	715 	53,56 	Bourg-en-Bresse
+Saint-Just 	01369 	01250 	La Vallière 	3,38 	881 	233,43 	Bourg-en-Bresse
+Saint-Laurent-sur-Saône 	01370 	01750 	Mâconnais - Val de Saône 	0,53 	1749 	3 122,64 	Bourg-en-Bresse
+Saint-Marcel 	01371 	01390 	Centre Dombes 	11,64 	1212 	90,98 	Bourg-en-Bresse
+Saint-Martin-de-Bavel 	01372 	01510 	Bugey-Arêne-Furans 	8,50 	443 	39,06 	Belley
+Saint-Martin-du-Frêne 	01373 	01430 	Lac de Nantua 	19,14 	1077 	54,86 	Nantua
+Saint-Martin-du-Mont 	01374 	01160 	Bresse Dombes Sud Revermont 	28,09 	1651 	46,35 	Bourg-en-Bresse
+Saint-Martin-le-Châtel 	01375 	01310 	Montrevel-en-Bresse 	12,77 	790 	51,06 	Bourg-en-Bresse
+Saint-Maurice-de-Beynost 	01376 	01700 	Miribel et du Plateau 	6,99 	3865 	575,11 	Bourg-en-Bresse
+Saint-Maurice-de-Gourdans 	01378 	01800 	Plaine de l'Ain 	25,39 	2498 	76,76 	Bourg-en-Bresse
+Saint-Maurice-de-Rémens 	01379 	01500 	Plaine de l'Ain 	10,40 	709 	58,08 	Belley
+Saint-Nizier-le-Bouchoux 	01380 	01560 	Canton de Saint-Trivier-de-Courtes 	28,30 	703 	19,29 	Bourg-en-Bresse
+Saint-Nizier-le-Désert 	01381 	01320 	Canton de Chalamont 	24,96 	880 	19,59 	Bourg-en-Bresse
+Saint-Paul-de-Varax 	01383 	01240 	Centre Dombes 	25,97 	1551 	45,71 	Bourg-en-Bresse
+Saint-Rambert-en-Bugey 	01384 	01230 	Vallée de l'Albarine 	28,55 	2164 	72,33 	Belley
+Saint-Rémy 	01385 	01310 	Bourg-en-Bresse 	7,38 	906 	110,16 	Bourg-en-Bresse
+Saint-Sorlin-en-Bugey 	01386 	01150 	Plaine de l'Ain 	9,07 	1061 	103,53 	Belley
+Saint-Sulpice 	01387 	01340 	Montrevel-en-Bresse 	5,26 	142 	19,58 	Bourg-en-Bresse
+Saint-Trivier-de-Courtes 	01388 	01560 	Canton de Saint-Trivier-de-Courtes 	16,53 	1013 	56,56 	Bourg-en-Bresse
+Saint-Trivier-sur-Moignans 	01389 	01990 	Chanstrival 	41,99 	1877 	36,60 	Bourg-en-Bresse
+Saint-Vulbas 	01390 	01150 	Plaine de l'Ain 	21,44 	957 	37,50 	Belley
+Sainte-Croix 	01342 	01120 	Canton de Montluel 	10,62 	534 	44,07 	Bourg-en-Bresse
+Sainte-Euphémie 	01353 	01600 	Saône Vallée 	4,60 	1518 	243,04 	Bourg-en-Bresse
+Sainte-Julie 	01366 	01150 	Plaine de l'Ain 	11,15 	889 	47,98 	Belley
+Sainte-Olive 	01382 	01330 	Centre Dombes 	7,39 	303 	34,24 	Bourg-en-Bresse
+Salavre 	01391 	01270 	Canton de Coligny 	7,77 	284 	36,68 	Bourg-en-Bresse
+Samognat 	01392 	01580 	Monts Berthiand 	14,01 	718 	30,12 	Nantua
+Sandrans 	01393 	01400 	Chalaronne-centre 	29,02 	524 	14,33 	Bourg-en-Bresse
+Sault-Brénaz 	01396 	01150 	Plaine de l'Ain 	5,61 	1043 	173,44 	Belley
+Sauverny 	01397 	01220 	Pays de Gex 	1,89 	1078 	537,04 	Gex
+Savigneux 	01398 	01480 	Porte ouest de la Dombes 	14,75 	1204 	59,32 	Bourg-en-Bresse
+Ségny 	01399 	01170 	Pays de Gex 	3,24 	1649 	416,05 	Gex
+Seillonnaz 	01400 	01470 	Rhône Chartreuse de Portes 	9,59 	138 	12,83 	Belley
+Sergy 	01401 	01630 	Pays de Gex 	9,46 	1977 	131,82 	Gex
+Sermoyer 	01402 	01190 	Canton de Pont-de-Vaux 	16,70 	669 	32,63 	Bourg-en-Bresse
+Serrières-de-Briord 	01403 	01470 	Rhône Chartreuse de Portes 	8,03 	1174 	119,55 	Belley
+Serrières-sur-Ain 	01404 	01450 	Monts Berthiand 	8,18 	119 	9,66 	Nantua
+Servas 	01405 	01960 	Bourg-en-Bresse 	13,05 	1184 	70,04 	Bourg-en-Bresse
+Servignat 	01406 	01560 	Canton de Saint-Trivier-de-Courtes 	7,99 	160 	16,90 	Bourg-en-Bresse
+Seyssel 	01407 	01420 	Pays de Seyssel 	2,40 	942 	333,75 	Belley
+Simandre-sur-Suran 	01408 	01250 	Treffort-en-Revermont 	16,30 	650 	39,14 	Bourg-en-Bresse
+Songieu 	01409 	01260 	Valromey 	20,58 	130 	6,07 	Belley
+Sonthonnax-la-Montagne 	01410 	01580 	Monts Berthiand 	14,14 	320 	21,36 	Nantua
+Souclin 	01411 	01150 	Plaine de l'Ain 	13,19 	261 	16,76 	Bourg-en-Bresse
+Sulignat 	01412 	01400 	Chalaronne-centre 	10,80 	569 	44,91 	Bourg-en-Bresse
+Surjoux 	01413 	01420 	pays bellegardien 	4,31 	78 	16,01 	Nantua
+Sutrieu 	01414 	01260 	Valromey 	19,05 	235 	11,44 	Belley
+Talissieu 	01415 	01510 	Valromey 	4,80 	425 	83,75 	Belley
+Tenay 	01416 	01230 	Vallée de l'Albarine 	13,12 	1120 	82,77 	Belley
+Thézillieu 	01417 	01110 	Plateau d'Hauteville 	26,25 	324 	11,39 	Belley
+Thil 	01418 	01120 	Miribel et du Plateau 	5,15 	1070 	184,27 	Bourg-en-Bresse
+Thoiry 	01419 	01710 	Pays de Gex 	28,93 	5205 	140,44 	Ge
+Thoissey 	01420 	01140 	Val-de-Saône Chalaronne 	1,40 	1540 	970,00 	Bourg-en-Bresse
+Torcieu 	01421 	01230 	Vallée de l'Albarine 	10,72 	698 	60,26 	Belley
+Tossiat 	01422 	01250 	Bresse Dombes Sud Revermont 	10,17 	1406 	109,64 	Bourg-en-Bresse
+Toussieux 	01423 	01600 	Saône Vallée 	4,74 	769 	153,38 	Bourg-en-Bresse
+Tramoyes 	01424 	01390 	Miribel et du Plateau 	12,93 	1674 	118,10 	Bourg-en-Bresse
+La Tranclière 	01425 	01160 	Bresse Dombes Sud Revermont 	14,75 	301 	20,34 	Bourg-en-Bresse
+Treffort-Cuisiat 	01426 	01370 	Treffort-en-Revermont 	39,41 	2204 	48,46 	Bourg-en-Bresse
+Trévoux 	01427 	01600 	Saône Vallée 	5,71 	6730 	1 119,44 	Bourg-en-Bresse
+Valeins 	01428 	01140 	Chanstrival 	4,36 	99 	15,37 	Bourg-en-Bresse
+Vandeins 	01429 	01660 	Bourg-en-Bresse 	9,40 	619 	54,26 	Bourg-en-Bresse
+Varambon 	01430 	01160 	Communauté de communes des Rives de l'Ain - Pays du Cerdon 	7,99 	521 	48,19 	Bourg-en-Bresse
+Vaux-en-Bugey 	01431 	01150 	Plaine de l'Ain 	8,22 	1195 	122,02 	Bourg-en-Bresse
+Verjon 	01432 	01270 	Canton de Coligny 	5,11 	250 	37,57 	Bourg-en-Bresse
+Vernoux 	01433 	01560 	Canton de Saint-Trivier-de-Courtes 	10,20 	285 	12,45 	Bourg-en-Bresse
+Versailleux 	01434 	01330 	Canton de Chalamont 	18,77 	332 	13,59 	Bourg-en-Bresse
+Versonnex 	01435 	01210 	Pays de Gex 	5,89 	2144 	290,66 	Gex
+Vesancy 	01436 	01170 	Aucune 	10,70 	526 	41,96 	Gex
+Vescours 	01437 	01560 	Canton de Saint-Trivier-de-Courtes 	12,48 	208 	15,30 	Bourg-en-Bresse
+Vésines 	01439 	01570 	Pays de Bâgé 	3,88 	91 	29,12 	Bourg-en-Bresse
+Vieu-d'Izenave 	01441 	01430 	Combe du Val - Brénod 	23,73 	693 	22,63 	Nantua
+Vieu 	01442 	01260 	Valromey 	6,54 	380 	47,55 	Belley
+Villars-les-Dombes 	01443 	01330 	Centre Dombes 	24,63 	4399 	175,72 	Bourg-en-Bresse
+Villebois 	01444 	01150 	Plaine de l'Ain 	14,46 	1153 	65,98 	Bourg-en-Bresse
+Villemotier 	01445 	01270 	Canton de Coligny 	13,86 	632 	32,83 	Bourg-en-Bresse
+Villeneuve 	01446 	01480 	Aucune 	26,79 	1383 	35,05 	Bourg-en-Bresse
+Villereversure 	01447 	01250 	La Vallière 	17,45 	1208 	63,15 	Bourg-en-Bresse
+Villes 	01448 	01200 	pays bellegardien 	9,60 	385 	27,92 	Nantua
+Villette-sur-Ain 	01449 	01320 	Canton de Chalamont 	19,38 	673 	24,36 	Bourg-en-Bresse
+Villieu-Loyes-Mollon 	01450 	01800 	Plaine de l'Ain 	15,91 	3095 	151,29 	Bourg-en-Bresse
+Viriat 	01451 	01440 	Bourg-en-Bresse 	45,35 	6006 	116,60 	Bourg-en-Bresse
+Virieu-le-Grand 	01452 	01510 	Bugey-Arêne-Furans 	12,55 	1156 	75,62 	Belley
+Virieu-le-Petit 	01453 	01260 	Valromey 	12,55 	309 	22,39 	Belley
+Virignin 	01454 	01300 	Belley Bas Bugey 	7,88 	855 	81,60 	Belley
+Vongnes 	01456 	01350 	Belley Bas Bugey 	2,05 	74 	43,41 	Belley
+Vonnas 	01457 	01540 	Bords de Veyle 	17,81 	2790 	135,99 	Bourg-en-Bresse

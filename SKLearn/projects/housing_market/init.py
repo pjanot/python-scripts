@@ -20,4 +20,16 @@ if __name__ == '__main__':
     plt.hist2d( Xr[:,2], yr, bins=[30,30])
     # plt.scatter( Xr[:,2], yr, c=Xr[:,0]) 
 
-    
+    file_paysdegex = open('communes_pays_de_gex_filtered.txt')
+    zips_pdg = []
+    for line in file_paysdegex:
+        zipcode = line.split()[-1]
+        zips_pdg.append(float(zipcode))
+
+    ispdgr = np.array([False]*len(yr))
+    for i, data in enumerate(Xr):
+        zipcode = data[0]
+        if zipcode in zips_pdg:
+            ispdgr[i] = True 
+
+    plt.scatter( Xr[ispdgr,2], yr[ispdgr], c='r')
