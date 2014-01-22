@@ -1,0 +1,3 @@
+exchange data between reading processes.
+either using shelve, or sqlite 3. 
+shelve doesn't support concurrent writers.
