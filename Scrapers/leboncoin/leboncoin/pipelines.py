@@ -32,7 +32,7 @@ class LeboncoinPipeline(object):
         # pas de pieces -> c'est un terrain. discard.
         if item['npieces'] is None:
             return None 
-        qry = "INSERT INTO ads VALUES ({postal},{npieces},{price},{surface},'{url}')".format(
+        qry = "INSERT INTO ads VALUES ({zipcode},{npieces},{price},{surface},'{url}')".format(
             zipcode = item['zipcode'],
             npieces = item['npieces'],
             price = item['price'],
