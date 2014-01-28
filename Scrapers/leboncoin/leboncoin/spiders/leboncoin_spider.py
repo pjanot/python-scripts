@@ -23,9 +23,9 @@ class LeboncoinSpider(BaseSpider):
          # rhone alpes
          # "http://www.leboncoin.fr/ventes_immobilieres/offres/rhone_alpes/?f=a&th=1",
          # ain
-         # "http://www.leboncoin.fr/ventes_immobilieres/offres/rhone_alpes/ain/?f=a&th=1",
+         "http://www.leboncoin.fr/ventes_immobilieres/offres/rhone_alpes/ain/?f=a&th=1",
          # Meximieux:
-         "http://www.leboncoin.fr/ventes_immobilieres/offres/rhone_alpes/?o=1&location=Meximieux%2001800"
+         # "http://www.leboncoin.fr/ventes_immobilieres/offres/rhone_alpes/?o=1&location=Meximieux%2001800"
          ]
 
     def parse(self, response):      
