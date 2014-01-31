@@ -63,7 +63,7 @@ if __name__ == '__main__':
             ispdgr[i] = True 
 
     plt.scatter( Xr[ispdgr,2], yr[ispdgr], c='r')
-    plt.scatter( Xr[!ispdgr,2], yr[!ispdgr], c='w')
+    # plt.scatter( Xr[ispdgr,2], yr[!ispdgr], c='w')
 
     #for classification between pays de gex or not, 
     #prepare samples with the same number of events
