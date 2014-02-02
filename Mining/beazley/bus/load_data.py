@@ -3,6 +3,7 @@ import glob
 import gzip
 import xml.etree.ElementTree as ET
 import pprint
+from collections import namedtuple
 
 
 class BusTimeLine( dict ):
@@ -19,15 +20,7 @@ class BusTimeLine( dict ):
     def positions(self):
         return [ (bus.lat, bus.lon) for bus in self.values() ]
             
-
-class Bus(dict):
-    def __init__(self, time, id, direction, lat, lon):
-        self.time = time
-        self.id = id
-        self.direction = direction 
-        self.lat = lat
-        self.lon = lon
-
+Bus = namedtuple('Bus', ['time','id','direction', 'lat', 'lon'])
 
 class TimeLine( dict ):
     '''Stores each bus in a BusTimeLine'''
@@ -89,12 +82,19 @@ if __name__ == '__main__':
     import sys 
     import shelve
 
+    test = True
+    ndata_files = -1
+    if test:
+        ndata_files = 5
+    
+    
     timeline = None
     if len(sys.argv)==1:
         data_dir = 'data'
         data_files = glob.glob('/'.join([data_dir, '*.xml.*']))
         snapshots = list()
-        for f in data_files:
+        
+        for f in data_files[:ndata_files]:
             try: 
                 snapshots.append( process_file(f) ) 
             except ET.ParseError: 
@@ -105,7 +105,11 @@ if __name__ == '__main__':
         bak.close() 
         
     map = GoogleMap()
-    for lat, lon in timeline['1380'].positions():
+    # import pdb; pdb.set_trace()
+    bustimeline = timeline.values()[0]
+    if not test:
+        bustimeline = timeline['1380']
+    for lat, lon in bustimeline.positions():
         map.addMarker(lat, lon, 'blue')
 
     print map 
