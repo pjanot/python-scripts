@@ -217,7 +217,5 @@ if __name__ == '__main__':
         plt.pcolormesh( xx,yy, Zr, cmap=cm.gray)
         ds.plot()
 
-        #     plt.plot( xx, yy, c=Z )
+    plot(gaus05)
     
-    
-    # print lg.predict( x0, gaus2)    
