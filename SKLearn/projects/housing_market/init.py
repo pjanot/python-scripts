@@ -31,11 +31,12 @@ def plot_class_pdg(X, y):
     
 if __name__ == '__main__':
 
-    import sys
-    if len(sys.argv)!=4:
-        print 'usage: Dataset.py <sqlite db file name> <table name> <name of the target feature>'
-        sys.exit(1)
-    db_filename, table_name, target_name = sys.argv[1:]
+    # import sys
+    # if len(sys.argv)!=4:
+    #     print 'usage: Dataset.py <sqlite db file name> <table name> <name of the target feature>'
+    #     sys.exit(1)
+    args = ['leboncoin.db', 'ads', 'price']
+    db_filename, table_name, target_name = args
     dataset = load_sql(db_filename, table_name, target_name)
 
     X = dataset['data']
