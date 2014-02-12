@@ -1,4 +1,11 @@
 import pandas as pd
+from dataset import DataSet
+from collections import namedtuple
+from twitter_api import jdump
+
+# I need to be able to see the tweet text: 
+pd.set_option('max_colwidth',200)
+
 
 '''
 Data structure definition for twitter analysis 
@@ -31,15 +38,33 @@ or simply dictionary of arrays? of Series?
     
 '''
 
-    
+# could this be a slots in the Tweet class? What's a slot btw? 
+tweet_fields = [
+    'id',
+    'retweet_count',
+    'favorite_count',
+    'text'
+    ]
+
+class Tweet( namedtuple('Tweet',tweet_fields) ):
+
+    def __new__(cls, tweetjson):
+        args = [ tweetjson[field] for field in cls._fields]
+        self = super(Tweet, cls).__new__(cls, *args)
+        return self
+ 
 
 if __name__ == '__main__':
 
-    test_data_1 = dict( col1 = [0,1,2,2], col2 = ['a','b','c', 'c'])
-    test_data_2 = dict( col1 = [0,1,2,2], col2 = ['a','b','c', 'c'])
+    import shelve
     
-    test_df = pd.DataFrame(test_data_1)
-    print test_df
-    print 'drop duplicates'
-    print test_df.drop_duplicates()
+    s = shelve.open('tweets.s')
+    tweets = s['suisses']
+    jdump(tweets[0])
 
+    tset = DataSet( Tweet._fields )
+
+    for tweet in tweets: 
+        tset += Tweet(tweet)
+
+    df = pd.DataFrame(tset)
