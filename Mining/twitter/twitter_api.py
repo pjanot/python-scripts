@@ -121,7 +121,7 @@ def jdump( val ):
     '''Just a shortcut'''
     print json.dumps( val, indent=1 )
 
-    
+
 if __name__ == '__main__':
 
     import sys 

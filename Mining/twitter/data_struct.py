@@ -38,7 +38,6 @@ or simply dictionary of arrays? of Series?
     
 '''
 
-
 class Tweet( namedtuple('Tweet',
                         [ 'id',
                           'user_name',
@@ -67,6 +66,24 @@ class Tweet( namedtuple('Tweet',
         
         self = super(Tweet, cls).__new__(cls, **kw)
         return self
+
+
+class User( namedtuple('User',
+                        [ 'id',
+                          'name' ] ) ):
+    
+    def __new__(cls, userjson):
+        
+        ujs = userjson
+        kw = dict()
+        
+        kw['id'] = ujs['id'] 
+        kw['name'] = ujs['name']        
+
+        self = super(User, cls).__new__(cls, **kw)
+        return self
+
+
  
 
 if __name__ == '__main__':
@@ -74,10 +91,13 @@ if __name__ == '__main__':
     import json
   
     tset = DataSet( Tweet._fields )
+    uset = DataSet( User._fields )
     infile = open('tweets_stream.json')
     for elem in json.load(infile):
         tset += Tweet(elem)
+        user = elem['user']
+        uset += User(user)
 
-    df = pd.DataFrame(tset)
-
+    tdf = pd.DataFrame(tset)
+    udf = pd.DataFrame(uset)
     
