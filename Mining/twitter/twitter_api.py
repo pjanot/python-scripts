@@ -1,9 +1,8 @@
 import twitter
 import pprint 
 import json
+import time
 import os
-
-# Twitter authentification
 
 auth = twitter.oauth.OAuth( os.environ['OAUTH_TOKEN'], 
                             os.environ['OAUTH_TOKEN_SECRET'],
@@ -11,44 +10,101 @@ auth = twitter.oauth.OAuth( os.environ['OAUTH_TOKEN'],
                             os.environ['CONSUMER_SECRET'] )
 
 
-class TwitterApi(twitter.Twitter):
+def oauth_login():
+    twitter_api = twitter.Twitter(auth=auth)
+    return twitter_api
 
-    def __init__(self, auth):
+
+class RestTwitterApi(twitter.Twitter):
+
+    def __init__(self, twitter_api):
         self.loglevel=1
-        super(TwitterApi, self).__init__(auth=auth)
+        self.throttle_count = 0
+        self.api = twitter_api
         
+        
+    def throttle(self, ncall_margin=20, nsec=30):
+        '''check if we are about to get rate limited. 
+        If the number of remaining calls is less than ncall_margin, wait for nsec.
+        '''
+        # probably would like to decorate all search functions with this method.
+        # if we want a margin of 20, we have to have a shorter period. 
+        period = ncall_margin / 2
+        if self.throttle_count%period != 0:
+            self.throttle_count += 1
+            return  
+        while True: 
+            # there is also a rate limit on the query below.
+            rl = self.api.application.rate_limit_status(resources='search')
+            remaining = rl['resources']['search']['/search/tweets']['remaining']
+            print 'Throttling?', remaining            
+            if remaining <= ncall_margin: 
+                print 'close to rate limit.. waiting', nsec, 'seconds'
+                time.sleep(nsec)
+            else: 
+                self.throttle_count += 1
+                return 
+
+                
     def get_tweets(self, query, nbatches=10, count=100):
+        '''Retrieve nbatches of count tweets following query.
+        '''
+        # the logic here could be reused.
+        # looks like twitter now limits at 99. weird
+        nbatches = int(nbatches)
+        count = int(count)
         tweets = []
-        search_results = twitter_api.search.tweets(q=query, 
-                                                   count=count)
-        tweets = search_results['statuses']
-        if self.loglevel>1:
-            print_search(search_results)
-        nsearches = 1
-        while True:
-            if self.loglevel>0:
-                print 'retrieved', len(tweets), 'tweets' 
-            if nsearches==nbatches:
-                break
-            max_id = search_results['search_metadata']['max_id']
-            search_results = twitter_api.search.tweets(q=query, count=count, max_id=max_id)
+        if nbatches < 1: 
+            return tweets
+        try:
+            # why do I get only 99 tweets instead of 100 today? 
+            search_results = self.api.search.tweets(q=query, 
+                                                count=count)
+            tweets = search_results['statuses']
             if self.loglevel>1:
                 print_search(search_results)
-            newtweets = search_results['statuses']
-            tweets += search_results['statuses']
-            nsearches += 1 
+            nsearches = 1
+            while True:
+                self.throttle()
+                if self.loglevel>0:
+                    print '{nsearches}/{nbatches} : {ntweets} tweets'.format(
+                        nsearches = nsearches,
+                        nbatches = nbatches, 
+                        ntweets = len(tweets)
+                        ) 
+                if nsearches==nbatches:
+                    break
+                # max_id = search_results['search_metadata']['max_id']
+                # print max_id
+                # print search_results['search_metadata']
+                next_results = search_results['search_metadata']['next_results']
+                unpck = dict([ kv.split('=') for kv in next_results[1:].split("&") ])
+                kwargs = dict( q=query, count=count, max_id=unpck['max_id']) 
+                search_results = self.api.search.tweets( **kwargs )
+                if self.loglevel>1:
+                    print_search(search_results)
+                newtweets = search_results['statuses']
+                tweets += search_results['statuses']
+                nsearches += 1 
+        except twitter.TwitterHTTPError, err:
+            # would also like to catch ctrl-C
+            # we don't want to throw away the tweets collected so far. 
+            print 'TwitterHTTPError caught:'
+            print  err
+        except KeyboardInterrupt: 
+            pass
         return tweets 
         
-# twitter_api = twitter.Twitter(auth=auth)
-twitter_api = TwitterApi(auth=auth)
+twitter_api = oauth_login()    
+rest_twitter_api = RestTwitterApi( oauth_login() )
  
-
 # YAHOO Where On Earth ID's
 
-WORLD_WOE_ID = 1
-US_WOE_ID = 23424977
-FR_WOE_ID = 23424819
-
+WOE_IDs = dict(
+    WORLD = 1,
+    US = 23424977,
+    FRANCE = 23424819,
+)
 
 # some debug functions 
 
@@ -68,5 +124,14 @@ def jdump( val ):
     
 if __name__ == '__main__':
 
-    tweets = twitter_api.get_tweets('#Suisses', nbatches=10)
+    import sys 
+    import shelve 
+    
+    print sys.argv
+    hashtag = sys.argv[1]
+    nbatches = sys.argv[2]
+    tweets = rest_twitter_api.get_tweets(hashtag, nbatches=nbatches)
 
+    output = shelve.open('tweets.shv')
+    output['tweets'] = tweets
+    output.close()

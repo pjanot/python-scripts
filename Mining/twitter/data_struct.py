@@ -38,33 +38,44 @@ or simply dictionary of arrays? of Series?
     
 '''
 
-# could this be a slots in the Tweet class? What's a slot btw? 
-tweet_fields = [
-    'id',
-    'retweet_count',
-    'favorite_count',
-    'text'
-    ]
 
-class Tweet( namedtuple('Tweet',tweet_fields) ):
-
+class Tweet( namedtuple('Tweet',
+                        [ 'id',
+                          'retweet_count',
+                          'favorite_count',
+                          'text'] ) ):
+    
     def __new__(cls, tweetjson):
-        args = [ tweetjson[field] for field in cls._fields]
-        self = super(Tweet, cls).__new__(cls, *args)
+        
+        tjs = tweetjson
+        kw = dict()
+
+        # stupid twitter stream api doesn't set retweet_count and favorite_count correctly
+        retweet_count = 0 
+        favorite_count = 0
+        retweeted_status = tjs.get('retweeted_status')
+        if retweeted_status:
+            retweet_count = retweeted_status['retweet_count']
+            favorite_count = retweeted_status['favorite_count']
+        kw['retweet_count'] = retweet_count
+        kw['favorite_count'] = favorite_count 
+
+        kw['id'] = tjs['id'] 
+        kw['text'] = tjs['text']
+        
+        self = super(Tweet, cls).__new__(cls, **kw)
         return self
  
 
 if __name__ == '__main__':
 
-    import shelve
-    
-    s = shelve.open('tweets.s')
-    tweets = s['suisses']
-    jdump(tweets[0])
-
+    import json
+  
     tset = DataSet( Tweet._fields )
-
-    for tweet in tweets: 
-        tset += Tweet(tweet)
+    infile = open('tweets_stream.json')
+    for elem in json.load(infile):
+        tset += Tweet(elem)
 
     df = pd.DataFrame(tset)
+
+    
