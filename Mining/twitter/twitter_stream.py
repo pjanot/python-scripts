@@ -11,7 +11,7 @@ print twitter_api
 
 twitter_stream = twitter.TwitterStream(auth=twitter_api.auth)
 
-def init_stream(query=''):   
+def init_stream(query='', lang=None):   
     stream = None
     if query!='':
         stream = twitter_stream.statuses.filter(track=query)
@@ -25,6 +25,8 @@ def init_stream(query=''):
         for tweet in stream:
             if tweet.get('delete'): 
                 # tweet deletions?
+                continue
+            if lang and tweet['lang']!=lang:
                 continue
             tweets.append( tweet )
             dtw = Tweet(tweet)
@@ -42,4 +44,4 @@ def init_stream(query=''):
 if __name__ == '__main__':
 
     query = ','.join(sys.argv[1:])
-    tweets, df = init_stream( query )  
+    tweets, df = init_stream( query, lang='en' )  

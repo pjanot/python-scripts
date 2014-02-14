@@ -10,4 +10,4 @@ keywords = [
     'Philippot',
     ] 
 
-tweets, df = init_stream( ','.join(keywords) )  
+tweets, df = init_stream( ','.join(keywords), lang='fr')  
