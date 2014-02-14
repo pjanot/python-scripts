@@ -1,6 +1,7 @@
 import twitter
 import shelve
 import json
+import sys
 
 from twitter_api import twitter_api
 from data_struct import Tweet, DataSet
@@ -36,10 +37,9 @@ def init_stream(query=''):
     with open('tweets_stream.json', 'w') as outfile:
         json.dump(tweets, outfile)
         df = pd.DataFrame(ds)
-    return df
+    return tweets, df
 
 if __name__ == '__main__':
-    import sys
 
     query = ','.join(sys.argv[1:])
-    df = init_stream( query )  
+    tweets, df = init_stream( query )  

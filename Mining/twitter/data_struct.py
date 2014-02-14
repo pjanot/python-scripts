@@ -41,6 +41,7 @@ or simply dictionary of arrays? of Series?
 
 class Tweet( namedtuple('Tweet',
                         [ 'id',
+                          'user_name',
                           'retweet_count',
                           'favorite_count',
                           'text'] ) ):
@@ -62,6 +63,7 @@ class Tweet( namedtuple('Tweet',
 
         kw['id'] = tjs['id'] 
         kw['text'] = tjs['text']
+        kw['user_name'] = tjs['user']['name']
         
         self = super(Tweet, cls).__new__(cls, **kw)
         return self
