@@ -25,7 +25,7 @@ class throttle(object):
             # print period, self.call_count
             if self.call_count%period != 0:
                 self.call_count += 1
-                func(*args, **kwargs)
+                return func(*args, **kwargs)
                 return  
             # there is also a rate limit on the query below.
             remaining = 999
