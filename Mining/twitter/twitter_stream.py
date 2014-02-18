@@ -25,7 +25,7 @@ def init_stream(query='', outfile='tweets_stream.json', language='en'):
     try:
         for tweet in stream:
             if tweet.get('delete'): 
-                # tweet deletions?
+                # tweet deletions. notifying apps so they can remove tweets
                 continue
             tweets.append( tweet )
             dtw = Tweet(tweet)

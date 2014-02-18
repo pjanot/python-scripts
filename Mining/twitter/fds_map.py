@@ -8,6 +8,10 @@ keywords = [
     '#marinelepen',
     'ElyseeMarine', 
     'Philippot',
+    '#LePen',
+    '#Gollnisch',
+    '#BrunoSubtil',
+    'BleuMarine',
     ] 
 
-tweets, df = init_stream( ','.join(keywords), lang='fr')  
+tweets, df = init_stream( ','.join(keywords), language='fr')  
