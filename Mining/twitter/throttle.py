@@ -11,19 +11,23 @@ class throttle(object):
         ...
     '''
     
-    def __init__(self, domain, operation):
+    def __init__(self, domain, operation, ncall_margin=10, test_mode=False):
         self.domain = domain
         self.operation = operation
-        self.call_count = 0
-        self.ncall_margin = 10
+        self.ncall_margin = ncall_margin
 
-        self.test = False
+        self.call_count = 0
+        
+        self.test = test_mode
         
     def __call__(self, func):
         def wrapped_func(*args, **kwargs):
-            period = self.ncall_margin - 1
-            # print period, self.call_count
+            period = max( 1, self.ncall_margin - 1 ) 
+            if self.test: 
+                print 'throttle', period, self.call_count
             if self.call_count%period != 0:
+                if self.test:
+                    print 'throttle: no testing yet' 
                 self.call_count += 1
                 return func(*args, **kwargs)
                 return  
@@ -48,7 +52,7 @@ class throttle(object):
 if __name__ == '__main__':
 
 
-    @throttle('search', '/search/tweets')
+    @throttle('search', '/search/tweets', ncall_margin=1, test_mode=True)
     def hello(text):
         print 'hello', text
 

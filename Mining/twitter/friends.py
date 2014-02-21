@@ -20,7 +20,7 @@ class User(object):
 def users_lookup(*args, **kwargs):
     return twitter_api.users.lookup( *args, **kwargs )
 
-@throttle('friends', '/friends/ids')
+@throttle('friends', '/friends/ids', ncall_margin=1)
 def friends_ids(*args, **kwargs):
     return twitter_api.friends.ids( *args, **kwargs )
 
@@ -66,7 +66,7 @@ def testCrawl():
     crawler.addUser(user_id) 
     crawler.addFriends(user_id)
     fids = crawler.users[469248037].following
-    for friend_id in fids[:5]:
+    for friend_id in fids[:50]:
         crawler.addFriends(friend_id)
     return crawler
         
