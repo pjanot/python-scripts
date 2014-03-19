@@ -31,6 +31,7 @@ class LeboncoinPipeline(object):
         # log.msg(str(item), level=log.WARNING)
         # pas de pieces -> c'est un terrain. discard.
         if item['npieces'] is None:
+            print 'WARNING: number of rooms not found'
             return None 
         qry = "INSERT INTO ads VALUES ({zipcode},{npieces},{price},{surface},'{url}')".format(
             zipcode = item['zipcode'],

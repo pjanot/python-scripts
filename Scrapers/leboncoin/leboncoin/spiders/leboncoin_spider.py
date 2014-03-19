@@ -23,10 +23,12 @@ class LeboncoinSpider(BaseSpider):
          # rhone alpes
          # "http://www.leboncoin.fr/ventes_immobilieres/offres/rhone_alpes/?f=a&th=1",
          # ain
-         "http://www.leboncoin.fr/ventes_immobilieres/offres/rhone_alpes/ain/?f=a&th=1",
+         # "http://www.leboncoin.fr/ventes_immobilieres/offres/rhone_alpes/ain/?f=a&th=1",
          # Meximieux:
          # "http://www.leboncoin.fr/ventes_immobilieres/offres/rhone_alpes/?o=1&location=Meximieux%2001800"
-         ]
+        # locations:
+        'http://www.leboncoin.fr/locations/offres/rhone_alpes/ain/?f=a&th=1&sqs=11&ros=3&ret=1&furn=2'
+        ]
 
     def parse(self, response):      
         sel = Selector(response)
@@ -62,19 +64,24 @@ class LeboncoinSpider(BaseSpider):
 
             
     def parse_annonce(self, response):
-        # print 'parsing annonce:', response.url
+        print 'parsing annonce:', response.url
+        # import pdb; pdb.set_trace()
         item = response.request.meta['item'] 
         item['url'] = response.url
 
         sel = Selector(response)
-        params = sel.css('div[class="lbcParams"]')
+        # for buy, the class name is lbcParams! (or they changed it)
+        params = sel.css('div[class="lbcParams floatLeft"]')
         price = params.xpath('table//td/span/text()').extract()
 
         data = params.xpath('//table//tr//text()').extract()
         data = [d.encode('ascii','replace').rstrip().lstrip() for d in data]
         data = [d for d in data if d!='']
 
-        price = get_value(data,'Prix')
+        price_tag = 'Loyer mensuel'
+        # for buy: 
+        # price_tag = 'Prix' 
+        price = get_value(data,price_tag)
         if price: 
             price = price.translate(None,' ?')
         item['price'] = price
