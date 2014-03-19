@@ -70,10 +70,27 @@ def testCrawl():
         crawler.addFriends(friend_id)
     return crawler
         
-# insh = shelve.open('graph.shv')
-# crawler =  insh['graph']
+insh = shelve.open('graph.shv')
+crawler =  insh['graph']
 
-crawler = testCrawl()
+from py2neo import neo4j
+from py2neo import node, rel
+
+# initialize neo4j database.
+graph_db = neo4j.GraphDatabaseService()
+graph_db.clear()
+ids = graph_db.get_or_create_index( neo4j.Node, 'Ids')
+
+for user_id, user in crawler.users.iteritems():
+    node1 = ids.get_or_create( 'id', user_id, {'id':user_id} )
+    for friend_id in user.following:
+        print user_id, friend_id
+        node2 = ids.get_or_create( 'id', friend_id, {'id':friend_id} )       
+        n1_n2 = graph_db.create( rel(node1, "follows", node2) )
+
+
+
+# crawler = testCrawl()
 
 ## import networkx as nx
 
