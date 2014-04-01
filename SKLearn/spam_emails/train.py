@@ -1,3 +1,5 @@
+import numpy as np
+
 from collections import Counter
 import itertools
 
@@ -6,8 +8,11 @@ from sklearn.feature_extraction.text import TfidfTransformer
 
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.linear_model import SGDClassifier
+from sklearn import svm
 
 from sklearn import metrics
+from sklearn import cross_validation
+from sklearn.utils import shuffle
 
 # scipy sparse matrices
 
@@ -43,16 +48,13 @@ def load_data( mails ):
     return result, count_vec
 
 def load_labels( mails ):
-    labels = [ mail['label'] for mail in mails]
+    labels = np.array( [ mail['label'] for mail in mails] ) 
     return labels
 
 
-def fit_eval(clf):
-    '''Fit and evaluate the model.
-    prints a report and returns the training efficiency.
-    '''
-    clf.fit(data, target)
-    # instantaneous! 
+def perf_report(clf, data, target):
+    # instantaneous!
+    print 'eval...'
     predicted = clf.predict(data)
     train_eff = np.mean( predicted == target)
     print 'training efficiency:', train_eff
@@ -68,8 +70,30 @@ def fit_eval(clf):
     print metrics.confusion_matrix(target, predicted)
     
     return train_eff
+    
 
+def fit_eval(clf, test_size=0.4):
+    '''Fit and evaluate the model.
+    prints a report and returns the training efficiency.
+    '''
+    X_train, X_test, y_train, y_test = cross_validation.train_test_split(
+        data, target, test_size=test_size, random_state=4213)
 
+    print 'fit...'
+    clf.fit(X_train, y_train)
+
+    if test_size > 0.:
+        print 'TEST SAMPLE'
+        perf_report(clf, X_test, y_test)
+        print
+    print 'TRAINING SAMPLE'
+    perf_report(clf, X_train, y_train)
+    print
+
+    print '5-fold cross-validation...'
+    scores = cross_validation.cross_val_score( clf, data, target, cv=5)
+    print scores
+    print("Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
 
 if __name__ == '__main__':
 
@@ -92,14 +116,14 @@ if __name__ == '__main__':
         data = tf_transformer.transform(data)
 
     
-    target = load_labels(all_mails)
+    target = load_labels(all_mails) 
     
     assert( len(target) == data.shape[0] )
 
 
     # clf = MultinomialNB()
-    clf = SGDClassifier(loss='hinge', penalty='l2',
-                        alpha=1e-3, n_iter=5)
-
+    # clf = SGDClassifier(loss='hinge', penalty='l2',
+    #                     alpha=1e-3, n_iter=5)
+    clf = svm.SVC( kernel='linear')
     fit_eval(clf)
 
