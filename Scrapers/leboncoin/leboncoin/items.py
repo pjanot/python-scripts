@@ -12,4 +12,6 @@ class AnnonceItem(Item):
     price = Field()
     surface = Field()
     npieces = Field()
+    day = Field()
+    month = Field() 
     pass

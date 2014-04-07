@@ -30,13 +30,18 @@ zipcodes_dest = dict(
     neyron = 1700, # miribel, beynost, etc.
     )
 
-rows = cursor.execute( 'SELECT * FROM ads WHERE price<1400 AND surface>100' ).fetchall()
+# select_str = 'SELECT * FROM ads'
+select_str = "SELECT * FROM ads WHERE price<1400 AND surface>100 AND date > '2014-03-15' ORDER BY date"
+rows = cursor.execute( select_str ).fetchall()
+
 
 srows = [r for r in rows if r[0] in zipcodes_dest.values() ]
+# srows = rows 
 
 for row in srows:
-    zip, npieces, price, surface, url = row
-    print 'code_postal =', zip, 'prix =', price, 'Npieces =', npieces, 'surface =', surface
+    # print row
+    zip, npieces, price, surface, date, url = row
+    print 'date', date, 'code_postal =', zip, 'prix =', price, 'Npieces =', npieces, 'surface =', surface
     print url
     print 
     webbrowser.open( url, 2 )

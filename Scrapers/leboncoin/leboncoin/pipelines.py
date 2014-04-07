@@ -18,7 +18,9 @@ class LeboncoinPipeline(object):
         self.c = self.conn.cursor()
         # Create table
         self.c.execute('''CREATE TABLE ads
-        (zipcode int, npieces int, price real, surface real, url text)
+        (zipcode int, npieces int, price real, surface real,
+        date text, 
+        url text)
         ''')
         self.conn.commit()
              
@@ -33,11 +35,14 @@ class LeboncoinPipeline(object):
         if item['npieces'] is None:
             print 'WARNING: number of rooms not found'
             return None 
-        qry = "INSERT INTO ads VALUES ({zipcode},{npieces},{price},{surface},'{url}')".format(
+        qry = "INSERT INTO ads VALUES ({zipcode},{npieces},{price},{surface},'{date}','{url}')".format(
             zipcode = item['zipcode'],
             npieces = item['npieces'],
             price = item['price'],
             surface = item['surface'],
+            date = '{year}-{month}-{day}'.format(year='2014',
+                                                 month=str( item['month'] ).zfill(2),
+                                                 day=str( item['day'] ).zfill(2) ), 
             url = item['url'],
             )
         print qry

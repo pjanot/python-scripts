@@ -9,6 +9,7 @@ import urlparse
 from scrapy.http.request import Request
 
 import pprint
+import re
 
 
 def process_value(value):
@@ -71,6 +72,16 @@ class LeboncoinSpider(BaseSpider):
 
         sel = Selector(response)
         # for buy, the class name is lbcParams! (or they changed it)
+
+        date = sel.css('div[class="upload_by"]').xpath('text()')[1].extract() # now ' le 6 avril `a 22:44. '
+        # date = date.encode('ascii', 'replace') # now ' le 6 avril `a 22:44. '
+        # print date.encode('ascii', 'replace')
+        # import pdb; pdb.set_trace()
+        date = date.split(u'\xe0')[0].strip() # now 'le 6 avril'
+        day, month = parse_date( date ) 
+        item['day'] = day
+        item['month'] = month
+        
         params = sel.css('div[class="lbcParams floatLeft"]')
         price = params.xpath('table//td/span/text()').extract()
 
@@ -106,3 +117,23 @@ def get_value(data, field):
         return None
 
 
+def parse_date(daystring):
+    if "re_day_month" not in parse_date.__dict__:
+        re_day_month = re.compile('.*[l,L]e\s+(\d+)\s+(\S+).*')
+       
+    month_map = {
+        'janvier':1,
+        u'f\xe9vrier':2,
+        'mars':3,
+        'avril':4,
+        'mai':5,
+        'juin':6
+        }
+    
+    match = re_day_month.match(daystring)
+    if not match:
+        return None
+    else:
+        day = match.group(1)
+        month = month_map.get( match.group(2).lower(), -1)
+        return day, month
