@@ -6,11 +6,11 @@ import webbrowser
 args = sys.argv[1:]
 table_name = 'ads'
 
-if len(args)!=1:
-    print 'usage: read_db.py <sqlite_file.db>'
+if len(args)!=2:
+    print 'usage: read_db.py <sqlite_file.db> <date>'
     sys.exit(1)
 
-db_filename = args[0]
+db_filename, date = args
 
 print 'file ', db_filename
 print 'table', table_name
@@ -31,7 +31,7 @@ zipcodes_dest = dict(
     )
 
 # select_str = 'SELECT * FROM ads'
-select_str = "SELECT * FROM ads WHERE price<1400 AND surface>100 AND date > '2014-03-15' ORDER BY date"
+select_str = "SELECT * FROM ads WHERE price<1400 AND surface>100 AND date > '{date}' ORDER BY date".format(date=date)
 rows = cursor.execute( select_str ).fetchall()
 
 
