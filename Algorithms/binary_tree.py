@@ -1,7 +1,13 @@
 import pprint
 import unittest 
+from stack import stack 
+
 
 class Node(object):
+    '''
+    There is no need for a Tree class. In fact the Node is equivalent
+    to the subtree rooted at this node.
+    '''
     
     def __init__(self, value):
         self.value = value
@@ -35,9 +41,42 @@ def dfs_inorder_recursive(node, result):
     dfs_inorder_recursive(node.right, result)
 
 
-def dfs_inorder_iterative(node):
-    return []
+def dfs_preorder_recursive(node, result):
+    if node is None:
+        return 
+    result.append( node.visit() )
+    dfs_preorder_recursive(node.left, result)
+    dfs_preorder_recursive(node.right, result)
 
+
+def dfs_preorder_iterative(root, result):
+    todo = stack()
+    todo.append(root)
+    while len(todo):
+        node = todo.pop()
+        if node.right:
+            todo.append(node.right)
+        if node.left:
+            todo.append(node.left)
+        result.append( node.value )
+
+
+def dfs_inorder_iterative(root, result):
+    to_visit = stack()
+    to_visit.append(root)
+    node = root
+    n = 0
+    while len(to_visit):
+        print node 
+        if node.right:
+            to_visit.append( node.right )
+        to_visit.append( node )
+        if node.left:
+            to_visit.append( node.left )
+        if node.right is None or (node.right.value == to_visit.peek().value):
+            result.append( node.value )
+            node = to_visit.pop()
+        node = to_visit.pop()
 
 def dfs_morris(node):
     return []
@@ -64,13 +103,24 @@ class TreeTestCase( unittest.TestCase ):
         dfs_inorder_recursive( self.root, result )
         self.assertEqual(result, range(6) )
 
-    def test_dfs_inorder_iterative(self):
-        result = dfs_inorder_iterative( self.root )
-        self.assertEqual(result, range(6) )
+    def test_dfs_preorder_recursive(self):
+        result = []
+        dfs_preorder_recursive( self.root, result )
+        self.assertEqual(result, [4, 2, 0, 1, 3, 5] )
 
-    def test_dfs_morris(self):
-        result = dfs_morris( self.root )
-        self.assertEqual(result, range(6) )
+    def test_dfs_preorder_iterative(self):
+        result = []
+        dfs_preorder_iterative( self.root, result )
+        self.assertEqual(result, [4, 2, 0, 1, 3, 5] )
+
+    ## def test_dfs_inorder_iterative(self):
+    ##     result = []
+    ##     dfs_inorder_iterative( self.root, result )
+    ##     self.assertEqual(result, range(6) )
+
+    ## def test_dfs_morris(self):
+    ##     result = dfs_morris( self.root )
+    ##     self.assertEqual(result, range(6) )
 
 
 if __name__ == '__main__':
