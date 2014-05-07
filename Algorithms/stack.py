@@ -1,37 +1,49 @@
 
-def error( fun ):
-    def wrapper( *args, **kwargs ):
-        print 'sorry, call is not allowed'
-    return wrapper
+class stack(object):
+    '''
+    Does not inherit from list because i want to restrict the interface
+    to the bare minimum.
+
+    Methods:
+    append
+    pop
+    peek
+    __len__
+    '''
+
+    def __init__(self):
+        self.items = []
+
+    def append(self, item):
+        self.items.append( item )
+
+    def pop(self):
+        return self.items.pop()
+
+    def peek(self):
+        return self.items[-1]
+
+    def __len__(self):
+        return len(self.items)
 
 
-# maybe a metaclass is a better solution than a decorator?
 
-class Stack(list):
+import unittest
 
-    # the error function can be used as a manual decorator
-    __getitem__ = error( list.__getitem__ )
+class TestStack(unittest.TestCase):
 
-    __delitem__ = error( list.__delitem__ )
-
-    # or using the decorator syntactic sugar
-    @error
-    def remove(self, item):
-        pass
-
-    @error
-    def insert(self, index, object):
-        pass
-
+    def test_stack(self):
+        s = stack()
+        s.append(1)
+        s.append(2)
+        s.append(3)
+        self.assertEqual( s.peek(), 3)
+        self.assertEqual( s.pop(), 3)
+        self.assertEqual( s.peek(), 2)
+        s.pop()
+        s.pop()
+        self.assertEqual( len(s), 0 )
+        
 
 if __name__ == '__main__':
-
-    stack = Stack()
-    stack.append(1)
-    stack[0]
-    stack.remove(1)
-    stack.append(2)
-    del stack[0]
-    stack.insert(0, 5)
-    stack.pop()
-    print stack 
+    unittest.main()
