@@ -8,6 +8,9 @@ class Node(object):
         self.left = None
         self.right = None
 
+    def visit(self):
+        return self.value
+
     def set_children(self, left, right):
         self.left = left
         self.right = right
@@ -24,14 +27,21 @@ class Node(object):
                                                        right = right ) )
 
 
-def dfs_inorder_recursive(node):
-    return []
+def dfs_inorder_recursive(node, result):
+    if node is None:
+        return 
+    dfs_inorder_recursive(node.left, result)
+    result.append( node.visit() )
+    dfs_inorder_recursive(node.right, result)
+
 
 def dfs_inorder_iterative(node):
     return []
 
+
 def dfs_morris(node):
     return []
+
 
 
 class TreeTestCase( unittest.TestCase ):
@@ -48,8 +58,10 @@ class TreeTestCase( unittest.TestCase ):
             pprint.pformat(self.nodes),
             '{0: node: 0 null 1,\n 1: node: 1 null null,\n 2: node: 2 0 3,\n 3: node: 3 null null,\n 4: node: 4 2 5,\n 5: node: 5 null null}')
 
+    # can I avoid this boilerplate code with decorators? 
     def test_dfs_inorder_recursive(self):
-        result = dfs_inorder_recursive( self.root )
+        result = []
+        dfs_inorder_recursive( self.root, result )
         self.assertEqual(result, range(6) )
 
     def test_dfs_inorder_iterative(self):
