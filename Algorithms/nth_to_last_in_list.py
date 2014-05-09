@@ -1,24 +1,5 @@
 
-class Node(object):
-    def __init__(self, value):
-        self.child = None
-        self.value = value
-
-    def __repr__(self):
-        return str(self.value)
-
-def build_list(N=10):
-    parent = None
-    root = None
-    for i in range(N):
-        node = Node(i)
-        if parent:
-            parent.child = node
-        else:
-            root = node
-        parent = node
-    return root
-
+from linkedlist import Node, build_list
 
 def look_ahead(node, n_to_last, thenode):
     if thenode[0]:
@@ -31,6 +12,7 @@ def look_ahead(node, n_to_last, thenode):
         # print 'found', node
     # print n_ahead
     return n_ahead+1
+
 
 if __name__ == '__main__':
 
