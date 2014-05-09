@@ -21,7 +21,7 @@ def build_list(N=10):
 
 def print_list(root):
     while root:
-        print root
+        print root, '->', root.child
         root = root.child
     
 
