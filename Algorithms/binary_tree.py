@@ -71,7 +71,8 @@ def dfs_inorder_iterative_visit1(root, result):
     not very elegant, but obvious solution to cycling problem.
     In python I don't think this solution is better than the recursive one,
     because we still have a stack -> so mem usage is the same.
-    In C++ or java, the stack should be declared on the heap. 
+    In C++ or java, the stack should be declared on the heap...
+    otherwise I don't see what is the gain. 
     '''
     todo = stack()
     todo.append( root )
