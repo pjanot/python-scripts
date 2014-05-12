@@ -44,7 +44,23 @@ def fibonacci_recursive_2(n):
 
 
 def fibonacci_iterative(n):
-    pass
+    '''
+    much easier for the brain and the processor.
+    '''
+    val = 1
+    pre = 0
+    if n<0:
+        raise ValueError('n must be >= 0.')        
+    if n==0:
+        return pre
+    if n==1:
+        return val
+    else:
+        i = 2
+        while i<=n:
+            val, pre = val+pre, val
+            i+=1
+        return val
 
         
 if __name__ == '__main__':
@@ -53,6 +69,6 @@ if __name__ == '__main__':
 
     print 'n\ttrue\tpred'
     for i, val in enumerate(fibo):
-        print i, '\t', val, '\t', fibonacci_recursive_2(i)
+        print i, '\t', val, '\t', fibonacci_iterative(i)
 
     
