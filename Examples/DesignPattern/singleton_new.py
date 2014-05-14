@@ -56,3 +56,7 @@ if __name__ == '__main__':
     b = Singleton()
     print hex(id(a)), hex(id(b)), b.added, b.var
 
+    # and a module-based singleton.
+    import singleton_module as singleton
+    singleton.a = 1
+    singleton.doSomething()
