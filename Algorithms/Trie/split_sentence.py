@@ -9,6 +9,11 @@ dtrie = build_dict_trie()
 ## dtrie.insert('butter')
 ## dtrie.insert('butt')
 
+#TODO: use word frequency, and assign a probability to each combination.
+# give highest probability.
+#TODO: conjugation
+#TODO: special words: a, I, you, the, end. high probability separators. 
+
 def split_sentence(words, sentence="peanutbutter"):
     if len(sentence)<2:
         return
