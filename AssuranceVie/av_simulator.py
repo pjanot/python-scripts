@@ -6,10 +6,10 @@ if __name__ == '__main__':
     banque = sys.argv[1]
 
     maif = dict(
-        ini_fr = 0.02,
+        ini_fr = 0.024,
         reg_fr = 0.022,
-        ges_fr = 0.006,
-        taux = 0.03,
+        ges_fr = 0.0,
+        taux = 0.04,
         )
 
     banque_postale = dict(
@@ -20,8 +20,8 @@ if __name__ == '__main__':
         )
 
 
-    ini_dep = 50000.
-    reg_dep = 500.
+    ini_dep = 100000.
+    reg_dep = 100.
     annees = 8
     abattement = 9200.
 
