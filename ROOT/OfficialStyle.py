@@ -81,20 +81,24 @@ class HistStyle:
                  markerColor = 1,
                  markerSize = 1,
                  lineStyle = 1,
-                 lineColor = 1,
+                 lineColor = None,
                  lineWidth = 2,
                  fillColor = None,
-                 fillStyle = 1001 ):
+                 fillStyle = 0 ):
         self.markerStyle = markerStyle
         self.markerColor = markerColor
         self.markerSize = markerSize
         self.lineStyle = lineStyle
-        self.lineColor = lineColor
-        self.lineWidth = lineWidth
-        if fillColor is None:
-            self.fillColor = lineColor
+        if lineColor is None:
+            self.lineColor = markerColor
         else:
-            self.fillColor = fillColor
+            self.lineColor = lineColor
+        self.lineWidth = lineWidth
+        self.fillColor = fillColor
+#        if fillColor is None:
+#            self.fillColor = lineColor
+#        else:
+#            self.fillColor = fillColor
         self.fillStyle = fillStyle
 
     def format( self, hist):
@@ -104,21 +108,36 @@ class HistStyle:
         hist.SetLineStyle( self.lineStyle )
         hist.SetLineColor( self.lineColor )
         hist.SetLineWidth( self.lineWidth )
-        hist.SetFillColor( self.fillColor )
+        if self.fillColor is not None:
+            hist.SetFillColor( self.fillColor )
         hist.SetFillStyle( self.fillStyle )
 
-calo = Style(markercolor=4)
-pf = Style(markercolor=2)
+traditional = HistStyle(markerColor=4, markerStyle=21)
+pf = HistStyle(markerColor=2)
 
 if __name__ == "__main__":
 
-    from ROOT import gStyle, TH1F, gPad
+    from ROOT import gStyle, TH1F, gPad, TLegend
 
     officialStyle(gStyle)
-    h = TH1F("h", "; p_{T} (GeV); a.u.", 10, 0, 10)
-    h.Fill(5, 10)
+    h = TH1F("h", "; p_{T} (GeV); a.u.", 10, -5, 5)
+    h.Sumw2()
+    h.FillRandom("gaus", 1000)
     h.Draw()
     pf.format(h)
+
+    h2 = TH1F("h2", "; p_{T} (GeV); a.u.", 10, -5, 5)
+    h2.Sumw2()
+    h2.FillRandom("gaus", 500)
+    h2.Draw("same")
+    traditional.format(h2)
+
+    legend = TLegend(0.67, 0.71, 0.92, 0.89)
+    legend.AddEntry(h, "PF")
+    legend.AddEntry(h2, "Traditional")
+    legend.Draw()
+     
     cmsprel = CMSPrelim()
     cmsprel.Draw()
+
     gPad.Update()
